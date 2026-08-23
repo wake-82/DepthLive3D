@@ -165,7 +165,7 @@ Switch to OpenXR mode in Virtual Desktop, SteamVR, or a similar application, the
 | Analog stick (left/right) | Adjust 3D Strength |
 | Analog stick button | Recenter view |
 | Trigger button | Left mouse click |
-| Grip button | Hold the grip button and move the controller up/down to adjust screen height |
+| Grip button | Hold the grip button and move the controller left/right to adjust screen size, or up/down to adjust screen distance. |
 | A / X button | Right mouse click |
 | B / Y button | Toggle Letterbox Remove ON/OFF |
 
@@ -184,6 +184,9 @@ A: Because this app relies on screen capture, full-screen mode may not work prop
 
 Q: My mouse cursor looks weird, or it disappears when I hover over something clickable.<br>
 A: Go to 'Mouse pointer style and color' in Windows Settings and reset it to the default cursor.<br> It should display normally now.
+
+Q: The mouse cursor isn't moving.
+A: If you are running a program that requires administrator privileges, the controller's mouse cursor will not work.<br> Please use your computer mouse to close the program.
 
 ---
 
