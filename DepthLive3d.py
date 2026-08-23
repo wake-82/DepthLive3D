@@ -2604,7 +2604,7 @@ def upsample_depth(depth: torch.Tensor, h: int, w: int) -> torch.Tensor:
     return F.interpolate(depth, (h, w), mode="bilinear", align_corners=True)
 
 
-DILATION_MAX_SHORT_SIDE = 720
+DILATION_MAX_SHORT_SIDE = 1080
 
 
 def compute_dilation_target_dims(frame_h: int, frame_w: int, cap: int = DILATION_MAX_SHORT_SIDE) -> tuple[int, int]:
