@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 import os
-import sys
+import sys 
 
 
 def _early_get_cpu_headroom_ratio(default: float = 0.5) -> float:
