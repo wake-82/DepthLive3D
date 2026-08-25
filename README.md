@@ -216,7 +216,7 @@ Built with the help of:
 - [pywin32](https://github.com/mhammond/pywin32) — PSF License
 - [psutil](https://github.com/giampaolo/psutil) — BSD-3-Clause License
 - [TransNetV2](https://github.com/soCzech/TransNetV2) — MIT License
-- [FFmpeg](https://ffmpeg.org/) — invoked as an external executable;
+- [FFmpeg](https://ffmpeg.org/) — invoked as an external executable;<br>
   builds fetched from https://github.com/BtbN/FFmpeg-Builds are licensed GPL v3
 
 Full license texts for each third-party library are included in the THIRD_PARTY_LICENSES/ folder.
