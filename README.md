@@ -43,7 +43,6 @@ https://github.com/wake-82/DepthLive3D/releases/tag/VR
 ### 2. Create a folder
 ```
 mkdir c:\DepthLive3D
-mkdir c:\DepthLive3D\DepthLive3D
 ```
 
 ### 3. Move into the folder
@@ -59,7 +58,6 @@ venv\Scripts\activate
 
 ### 4. Install ZipDepth
 ```
-cd c:\DepthLive3D\DepthLive3D
 git clone https://github.com/fabiotosi92/ZipDepth.git
 ```
 
@@ -87,6 +85,7 @@ cd c:\DepthLive3D
 ### 7. Install DepthLive3D
 ```
 git clone https://github.com/wake-82/DepthLive3D.git
+move C:\DepthLive3D\ZipDepth C:\DepthLive3D\DepthLive3D\
 ```
 
 ### 8. Install PyTorch (CUDA)
@@ -101,6 +100,9 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
 ```
 
 Check whether the GPU version was installed correctly (if the CPU version was installed instead, reinstall):
+
+(CPU version uninstall):
+pip uninstall torch torchvision torchaudio -y 
 ```
 python -c "import torch; print(torch.__version__); print(torch.cuda.is_available())"
 ```
@@ -113,13 +115,13 @@ True
 
 ### 9. Run the program
 ```
-cd c:\DepthLive3D\DepthLive3D
+cd c:\DepthLive3D
 python DepthLive3D.py
 ```
 
 If you installed it inside a virtual environment, run the following instead:
 ```
-cd c:\DepthLive3D\DepthLive3D
+cd c:\DepthLive3D
 venv\Scripts\activate
 python DepthLive3D.py
 ```
