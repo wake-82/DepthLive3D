@@ -43,6 +43,7 @@ https://github.com/wake-82/DepthLive3D/releases/tag/VR
 ### 2. Create a folder
 ```
 mkdir c:\DepthLive3D
+mkdir c:\DepthLive3D\DepthLive3D
 ```
 
 ### 3. Move into the folder
