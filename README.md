@@ -93,6 +93,11 @@ move C:\DepthLive3D\ZipDepth C:\DepthLive3D\DepthLive3D\
 - Older GPUs (e.g., GTX 1000 series, Pascal architecture): `cu126`
 - Newer GPUs (e.g., RTX 20/30/40/50 series): `cu128`
 
+CPU version uninstall:
+```
+pip uninstall torch torchvision torchaudio -y
+```
+
 Run only the one line that matches your graphics card:
 ```
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
@@ -100,9 +105,6 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
 ```
 
 Check whether the GPU version was installed correctly (if the CPU version was installed instead, reinstall):
-
-(CPU version uninstall):
-pip uninstall torch torchvision torchaudio -y 
 ```
 python -c "import torch; print(torch.__version__); print(torch.cuda.is_available())"
 ```
