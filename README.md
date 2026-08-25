@@ -135,8 +135,9 @@ Switch to OpenXR mode in Virtual Desktop, SteamVR, or a similar application, the
 
 ---
 
-## Options
+## Live 3D Options
 
+- **Mode** — Selects between OpenXR and PC mode. Choose OpenXR for VR devices, and PC mode for 3D monitors, AR glasses, or standard monitors.
 - **Process Size** — Sets the capture resolution. 720p or 1080p is recommended.
 - **Target FPS** — Sets the capture frame rate. You can choose between 30 and 60. If the frame rate is unstable, try switching to 30.
 - **Input Monitor** — Selects which monitor to capture. Set to `0` for the main monitor.
@@ -145,6 +146,7 @@ Switch to OpenXR mode in Virtual Desktop, SteamVR, or a similar application, the
 - **Low VRAM Mode** — Enable this option if the VR screen freezes or the background flickers due to insufficient GPU VRAM. Note that enabling this will reduce the frame rate. 
 <br>Additionally, since this mode uses only the most recent frame, it offers the fastest screen response time. Therefore, if game responsiveness is important to you, enabling this mode can be advantageous. 
 - **Auto Mode** — When enabled, Edge Fix and Flicker Reduction are automatically set to optimal values based on the 3D Strength value.
+- **3D Format** — Enabled in PC mode. Select the 3D output format that matches your device.
 - **3D Strength** — Adjusts the strength of the 3D effect. Higher strength increases artifacts and depth map flickering. You can adjust this in real time using the `[` and `]` keys.
 - **Convergence** — Adjusts how much the screen appears to pop out or recede. At `0.0`, the background is flat and the foreground pops out. At `1.0`, the background appears deeper and the foreground recedes into the screen. `0.5` is a balanced midpoint between the two.
 - **Edge Fix** — Expands the edges of foreground objects. As 3D Strength increases, foreground shapes may distort — Edge Fix helps correct this.
@@ -152,6 +154,7 @@ Switch to OpenXR mode in Virtual Desktop, SteamVR, or a similar application, the
 - **Preserve Screen Border** — When enabled, protects the edges of the screen. Recommended when using a high 3D Strength value.
 - **Depth Resolution** — Adjusts the resolution of the depth map. Higher resolution improves 3D quality but reduces frame rate.
 - **FPS Display** — Displays the current average conversion FPS on screen.
+- **Full SBS Screen Size** — Designed for AR glass users. Adjusts the screen size when outputting in Full SBS (fsbs).
 - **VR Screen Options** — Configure screen size, height, distance, center position, and screen reset.
 - **Keyboard Hotkeys** — Assign shortcut keys for each option.
 - **Letterbox Remove Toggle** — Automatically detects and removes letterboxing. This removes artifacts that can appear above and below the letterbox bars in letterboxed videos. Quest users can toggle this via controller input; other headsets must assign a keyboard shortcut. Make sure to turn this OFF when you're done, to prevent malfunctions.
@@ -161,6 +164,46 @@ Switch to OpenXR mode in Virtual Desktop, SteamVR, or a similar application, the
 - **Start 3D Conversion / Stop** — Starts or stops the program. You can also hold the `ESC` key for 2 seconds to exit the program.
 
 > Any option that does not prompt a "restart required" notice can be adjusted in real time while the program is running.
+
+---
+
+## Conversion 3D Options
+
+- **Input File** — Select a video file. Selecting a folder will sequentially convert all videos inside it.
+
+- **Depthmap Input File** — Select both the original video and a depthmap video to skip depthmap generation and start conversion immediately.
+
+- **Output Folder** — Select the destination folder where converted files will be saved.
+
+- **Preset** — Save and load your custom 3D settings.
+
+- **Output Format** — Select the 3D output format.
+
+- **3D Options** — Please refer to the Live 3D options documentation.
+
+- **Extract Raw Depthmap** — When checked, exports and saves the raw depthmap video alongside the output file.
+
+- **Scene Boundary Detection** — Automatically detects and splits scene transitions.<br> Recommended when using Flicker Reduction to eliminate ghosting artifacts during scene cuts.
+
+- **Screen Border Protection** — Please refer to the Live 3D options documentation.
+
+- **Use FP16** — When checked, processes using FP16; when unchecked, generates depthmaps using FP32.<br> FP16 offers faster processing speeds, whereas FP32 provides slightly higher precision.
+
+- **Auto Mode** — When checked, automatically applies optimized parameters based on the 3D depth strength.
+
+- **Video Codec** — Selects the video encoding codec.<br> libx uses CPU processing, while nvenc utilizes NVIDIA GPU acceleration for faster conversion speeds.
+
+- **Resize Resolution** — Changes the resolution of the video prior to conversion.
+
+- **MKV HDR Normalize** — When checked, re-encodes HDR video into a standard video format before starting the conversion process.
+
+- **Auto Letterbox Crop** — Automatically detects and crops top and bottom letterboxes.<br> Note that detection may fail if text or subtitles overlap the letterbox area.
+
+- **Pad to 16:9** — Pads non-16:9 videos with letterboxes to conform to a 16:9 aspect ratio.<br> Recommended for use in conjunction with Auto Letterbox Crop.
+
+- **Start Time, End Time** — When enabled, allows specifying a custom time frame to convert a specific clip of the video.
+
+- **Start / Stop Buttons** — Starts or halts the video conversion process.
 
 ---
 
@@ -194,6 +237,9 @@ A: Go to 'Mouse pointer style and color' in Windows Settings and reset it to the
 
 Q: The mouse cursor isn't moving.<br>
 A: If you are running a program that requires administrator privileges, the controller's mouse cursor will not work.<br> Please use your computer mouse to close the program.
+
+Q: Target FPS is capped at 30.<br> 
+A: In PC mode, SBS and TB settings only support up to 30 FPS due to limitations in the capture method.
 
 ---
 
