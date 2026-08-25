@@ -115,13 +115,13 @@ True
 
 ### 9. Run the program
 ```
-cd c:\DepthLive3D
+cd c:\DepthLive3D\DepthLive3D
 python DepthLive3D.py
 ```
 
 If you installed it inside a virtual environment, run the following instead:
 ```
-cd c:\DepthLive3D
+cd c:\DepthLive3D\DepthLive3D
 venv\Scripts\activate
 python DepthLive3D.py
 ```
