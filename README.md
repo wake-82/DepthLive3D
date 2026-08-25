@@ -224,6 +224,9 @@ A: If you are running a program that requires administrator privileges, the cont
 Q: Target FPS is capped at 30.<br> 
 A: In PC mode, SBS and TB settings only support up to 30 FPS due to limitations in the capture method.
 
+Q: An error occurs as soon as conversion starts when the NVENC codec is selected.
+A: Driver compatibility for FFmpeg's NVENC codec varies depending on the build version. Please update to the latest NVIDIA graphics driver.
+
 ---
 
 ## Credits (Acknowledgements)
