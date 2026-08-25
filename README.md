@@ -170,39 +170,22 @@ Switch to OpenXR mode in Virtual Desktop, SteamVR, or a similar application, the
 ## Conversion 3D Options
 
 - **Input File** — Select a video file. Selecting a folder will sequentially convert all videos inside it.
-
 - **Depthmap Input File** — Select both the original video and a depthmap video to skip depthmap generation and start conversion immediately.
-
 - **Output Folder** — Select the destination folder where converted files will be saved.
-
 - **Preset** — Save and load your custom 3D settings.
-
 - **Output Format** — Select the 3D output format.
-
 - **3D Options** — Please refer to the Live 3D options documentation.
-
 - **Extract Raw Depthmap** — When checked, exports and saves the raw depthmap video alongside the output file.
-
 - **Scene Boundary Detection** — Automatically detects and splits scene transitions.<br> Recommended when using Flicker Reduction to eliminate ghosting artifacts during scene cuts.
-
 - **Screen Border Protection** — Please refer to the Live 3D options documentation.
-
 - **Use FP16** — When checked, processes using FP16; when unchecked, generates depthmaps using FP32.<br> FP16 offers faster processing speeds, whereas FP32 provides slightly higher precision.
-
 - **Auto Mode** — When checked, automatically applies optimized parameters based on the 3D depth strength.
-
 - **Video Codec** — Selects the video encoding codec.<br> libx uses CPU processing, while nvenc utilizes NVIDIA GPU acceleration for faster conversion speeds.
-
 - **Resize Resolution** — Changes the resolution of the video prior to conversion.
-
 - **MKV HDR Normalize** — When checked, re-encodes HDR video into a standard video format before starting the conversion process.
-
 - **Auto Letterbox Crop** — Automatically detects and crops top and bottom letterboxes.<br> Note that detection may fail if text or subtitles overlap the letterbox area.
-
 - **Pad to 16:9** — Pads non-16:9 videos with letterboxes to conform to a 16:9 aspect ratio.<br> Recommended for use in conjunction with Auto Letterbox Crop.
-
 - **Start Time, End Time** — When enabled, allows specifying a custom time frame to convert a specific clip of the video.
-
 - **Start / Stop Buttons** — Starts or halts the video conversion process.
 
 ---
