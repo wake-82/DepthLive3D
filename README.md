@@ -32,7 +32,7 @@ https://github.com/wake-82/DepthLive3D/releases/tag/VR
 
 4. Once the installation is complete, run the DepthLive3D-Run.bat file.
 
-5. Launch an OpenXR-supported PC program (such as Virtual Desktop or SteamVR) on your VR headset and click 'Start 3D Conversion' to view your 3D-converted PC screen on a virtual VR display.
+5. Select Converted 3D to convert video files, or Live 3D to convert your computer screen to 3D in real time.
 
 ---
 
@@ -130,8 +130,7 @@ python DepthLive3D.py
 ```
 
 ### 10. Start the conversion
-
-Switch to OpenXR mode in Virtual Desktop, SteamVR, or a similar application, then click the "Start 3D Conversion" button in DepthLive3D. The program will capture your computer screen and output a real-time 3D-converted image to the virtual screen.
+Select Converted 3D to convert video files, or Live 3D to convert your computer screen to 3D in real time.
 
 ---
 
