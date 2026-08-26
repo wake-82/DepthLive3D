@@ -230,6 +230,12 @@ A: Driver compatibility for FFmpeg's NVENC codec varies depending on the build v
 Q: Anaglyph output in PC mode does not work when using Virtual Desktop.<br>
 A: Anaglyph output in PC mode does not support 3D rendering in virtual display environments like Virtual Desktop. However, by switching to Output mode, you can display the anaglyph screen in Virtual Desktop.
 
+Q: How do I use the Dual-Monitor 3D Output mode?<br>
+A: This mode requires two monitors in total: one for capture and one for output.<br>
+Setup Preparation: If you lack physical monitors, add a second display using a virtual display driver, an HDMI dummy plug, or Virtual Desktop's virtual display feature.<br>
+Configuration: Set your Windows display settings to Extend, then select different monitors for input and output in the program. (e.g., Input: Monitor 0 / Output: Monitor 1)<br>
+Important: Do not assign the same monitor to both input and output.
+
 ---
 
 ## Credits (Acknowledgements)
