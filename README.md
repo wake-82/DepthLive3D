@@ -140,6 +140,7 @@ Select Converted 3D to convert video files, or Live 3D to convert your computer 
 - **Process Size** — Sets the capture resolution. 720p or 1080p is recommended.
 - **Target FPS** — Sets the capture frame rate. You can choose between 30 and 60. If the frame rate is unstable, try switching to 30.
 - **Input Monitor** — Selects which monitor to capture. Set to `0` for the main monitor.
+- **Output Monitor** — Enabled in Dual-Monitor 3D Output mode.<br> Select the monitor to capture in Input Monitor, and select the monitor to display the 3D conversion output in Output Monitor.
 - **Dynamic Resolution Auto Adjust** — Automatically adjusts the resolution dynamically based on the Process Size setting. Enabling this skips resizing and improves frame rate.
 - **CPU Performance** — Selects how many CPU cores to use. Setting this to "High" does not always improve performance — try each mode to find the best setting for your system.
 - **Low VRAM Mode** — Enable this option if the VR screen freezes or the background flickers due to insufficient GPU VRAM. Note that enabling this will reduce the frame rate. 
