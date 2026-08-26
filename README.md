@@ -3,7 +3,7 @@
 ![Icon](https://raw.githubusercontent.com/wake-82/DepthLive3D/refs/heads/main/icon.ico)
 
 ## What is DepthLive3D?
-
+![preview](./preview.png)
 DepthLive3D is a free program that uses AI-based depth mapping and OpenXR technology to convert PC screen into 3D screen in real time within a VR environment.
 
 ## Requirements
