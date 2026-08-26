@@ -136,7 +136,7 @@ Select Converted 3D to convert video files, or Live 3D to convert your computer 
 
 ## Live 3D Options
 
-- **Mode** — Selects between OpenXR and PC mode. Choose OpenXR for VR devices, and PC mode for 3D monitors, AR glasses, or standard monitors.
+- **Mode** — Selects between OpenXR, PC, and Dual-Monitor 3D Output modes.<br> Choose OpenXR for VR devices, and PC or Dual-Monitor 3D Output for 3D TV, AR glasses, or standard monitors.<br> Note that Dual-Monitor 3D Output mode requires an external monitor or a virtual monitor.
 - **Process Size** — Sets the capture resolution. 720p or 1080p is recommended.
 - **Target FPS** — Sets the capture frame rate. You can choose between 30 and 60. If the frame rate is unstable, try switching to 30.
 - **Input Monitor** — Selects which monitor to capture. Set to `0` for the main monitor.
