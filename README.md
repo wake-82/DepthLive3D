@@ -206,31 +206,31 @@ Select Converted 3D to convert video files, or Live 3D to convert your computer 
 
 ## QnA
 
-Q: The letterbox removal feature isn't working.<br>
+**Q: The letterbox removal feature isn't working.**<br> 
 A: If there is text inside the letterbox or the resolution is not the standard 16:9 aspect ratio, the letterbox may not be recognized.
 
-Q: I only see a black screen on streaming sites like Netflix or Disney+.<br>
+**Q: I only see a black screen on streaming sites like Netflix or Disney+.**<br>
 A: Screen capture is blocked due to DRM protection policies.<br> Try disabling hardware acceleration in your web browser settings.
 
-Q: The game screen is cropped or displaying incorrectly.<br>
+**Q: The game screen is cropped or displaying incorrectly.**<br>
 A: Because this app relies on screen capture, full-screen mode may not work properly.<br> Try changing the game's display settings to 'Windowed' or 'Borderless Windowed' mode.
 
-Q: My mouse cursor looks weird, or it disappears when I hover over something clickable.<br>
+**Q: My mouse cursor looks weird, or it disappears when I hover over something clickable.**<br>
 A: Go to 'Mouse pointer style and color' in Windows Settings and reset it to the default cursor.<br> It should display normally now.
 
 Q: The mouse cursor isn't moving.<br>
 A: If you are running a program that requires administrator privileges, the controller's mouse cursor will not work.<br> Please use your computer mouse to close the program.
 
-Q: Target FPS is capped at 30.<br> 
+**Q: Target FPS is capped at 30.**<br> 
 A: In PC mode, SBS and TB settings only support up to 30 FPS due to limitations in the capture method.
 
-Q: An error occurs as soon as conversion starts when the NVENC codec is selected.<br>
+**Q: An error occurs as soon as conversion starts when the NVENC codec is selected.**<br>
 A: Driver compatibility for FFmpeg's NVENC codec varies depending on the build version. Please update to the latest NVIDIA graphics driver.
 
-Q: Anaglyph output in PC mode does not work when using Virtual Desktop.<br>
+**Q: Anaglyph output in PC mode does not work when using Virtual Desktop.**<br>
 A: Anaglyph output in PC mode does not support 3D rendering in virtual display environments like Virtual Desktop. However, by switching to Output mode, you can display the anaglyph screen in Virtual Desktop.
 
-Q: How do I use the Dual-Monitor 3D Output mode?<br>
+**Q: How do I use the Dual-Monitor 3D Output mode?**<br>
 A: This mode requires two monitors in total: one for capture and one for output.<br>
 Setup Preparation: If you lack physical monitors, add a second display using a virtual display driver, an HDMI dummy plug, or Virtual Desktop's virtual display feature.<br>
 Configuration: Set your Windows display settings to Extend, then select different monitors for input and output in the program. (e.g., Input: Monitor 0 / Output: Monitor 1)<br>
