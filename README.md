@@ -218,7 +218,7 @@ A: Because this app relies on screen capture, full-screen mode may not work prop
 **Q: My mouse cursor looks weird, or it disappears when I hover over something clickable.**<br>
 A: Go to 'Mouse pointer style and color' in Windows Settings and reset it to the default cursor.<br> It should display normally now.
 
-Q: The mouse cursor isn't moving.<br>
+**Q: The mouse cursor isn't moving.**<br>
 A: If you are running a program that requires administrator privileges, the controller's mouse cursor will not work.<br> Please use your computer mouse to close the program.
 
 **Q: Target FPS is capped at 30.**<br> 
