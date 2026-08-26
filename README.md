@@ -224,8 +224,11 @@ A: If you are running a program that requires administrator privileges, the cont
 Q: Target FPS is capped at 30.<br> 
 A: In PC mode, SBS and TB settings only support up to 30 FPS due to limitations in the capture method.
 
-Q: An error occurs as soon as conversion starts when the NVENC codec is selected.
+Q: An error occurs as soon as conversion starts when the NVENC codec is selected.<br>
 A: Driver compatibility for FFmpeg's NVENC codec varies depending on the build version. Please update to the latest NVIDIA graphics driver.
+
+Q: Anaglyph output in PC mode does not work when using Virtual Desktop.<br>
+A: Anaglyph output in PC mode does not support 3D rendering in virtual display environments like Virtual Desktop. However, by switching to Output mode, you can display the anaglyph screen in Virtual Desktop.
 
 ---
 
