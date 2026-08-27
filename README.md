@@ -155,7 +155,7 @@ Select Converted 3D to convert video files, or Live 3D to convert your computer 
 - **Depth Resolution** — Adjusts the resolution of the depth map. Higher resolution improves 3D quality but reduces frame rate.
 - **FPS Display** — Displays the current average conversion FPS on screen.
 - **Full SBS Screen Size** — Designed for AR glass users. Adjusts the screen size when outputting in Full SBS (fsbs).
-- **VR Screen Options** — Configure screen size, height, distance, center position, and screen reset.
+- **VR Screen Options** — Configure screen size, height, distance, center position, background and screen reset.
 - **Keyboard Hotkeys** — Assign shortcut keys for each option.
 - **Letterbox Remove Toggle** — Automatically detects and removes letterboxing. This removes artifacts that can appear above and below the letterbox bars in letterboxed videos. Quest users can toggle this via controller input; other headsets must assign a keyboard shortcut. Make sure to turn this OFF when you're done, to prevent malfunctions.
 - **Mouse Cursor** — Adjust the size and color of the mouse cursor used for controller input.
