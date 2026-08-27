@@ -4,7 +4,7 @@
 
 ## What is DepthLive3D?
 ![preview](./preview.png)
-DepthLive3D is a free program that uses AI-based depth mapping and OpenXR technology to convert PC screen into 3D screen in real time within a VR environment.
+DepthLive3D is a free program that uses AI-based depth mapping and OpenXR technology to convert your live PC screen into 3D in real time within a VR environment, alongside offline 2D-to-3D video file conversion.
 
 ## Requirements
 
