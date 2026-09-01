@@ -176,7 +176,6 @@ Select Converted 3D to convert video files, or Live 3D to convert your computer 
 - **Output Format** — Select the 3D output format.
 - **3D Options** — Please refer to the Live 3D options documentation.
 - **Extract Raw Depthmap** — When checked, exports and saves the raw depthmap video alongside the output file.
-- **Scene Boundary Detection** — Automatically detects and splits scene transitions.<br> Recommended when using Flicker Reduction to eliminate ghosting artifacts during scene cuts.
 - **Screen Border Protection** — Please refer to the Live 3D options documentation.
 - **Use FP16** — When checked, processes using FP16; when unchecked, generates depthmaps using FP32.<br> FP16 offers faster processing speeds, whereas FP32 provides slightly higher precision.
 - **Auto Mode** — When checked, automatically applies optimized parameters based on the 3D depth strength.
@@ -256,7 +255,6 @@ Built with the help of:
 - [glfw](https://www.glfw.org/) — zlib/libpng License
 - [pywin32](https://github.com/mhammond/pywin32) — PSF License
 - [psutil](https://github.com/giampaolo/psutil) — BSD-3-Clause License
-- [TransNetV2](https://github.com/soCzech/TransNetV2) — MIT License
 - [FFmpeg](https://ffmpeg.org/) — invoked as an external executable;<br>
   builds fetched from https://github.com/BtbN/FFmpeg-Builds are licensed GPL v3
 
