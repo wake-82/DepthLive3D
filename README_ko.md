@@ -176,7 +176,6 @@ python DepthLive3D.py
 - **Output Format** — 3D 출력 형식을 선택합니다.
 - **3D Options** — Live 3D 옵션 문서를 참고하세요.
 - **Extract Raw Depthmap** — 체크하면 원본 깊이맵 영상을 출력 파일과 함께 내보내고 저장합니다.
-- **Scene Boundary Detection** — 장면 전환을 자동으로 감지하여 분할합니다.<br> Flicker Reduction 사용 시 장면 전환 부분에서 발생하는 고스트 아티팩트를 없애기 위해 권장됩니다.
 - **Screen Border Protection** — Live 3D 옵션 문서를 참고하세요.
 - **Use FP16** — 체크하면 FP16으로 처리하고, 체크 해제하면 FP32로 깊이맵을 생성합니다.<br> FP16은 처리 속도가 더 빠르고, FP32는 정밀도가 약간 더 높습니다.
 - **Auto Mode** — 체크하면 3D 깊이 강도(depth strength) 값을 기준으로 최적화된 파라미터를 자동으로 적용합니다.
@@ -256,7 +255,6 @@ A: 이 모드는 캡처용과 출력용 총 2대의 모니터가 필요합니다
 - [glfw](https://www.glfw.org/) — zlib/libpng 라이선스
 - [pywin32](https://github.com/mhammond/pywin32) — PSF 라이선스
 - [psutil](https://github.com/giampaolo/psutil) — BSD-3-Clause 라이선스
-- [TransNetV2](https://github.com/soCzech/TransNetV2) — MIT 라이선스
 - [FFmpeg](https://ffmpeg.org/) — 외부 실행 파일로 호출됨;<br>
   https://github.com/BtbN/FFmpeg-Builds 에서 받은 빌드는 GPL v3 라이선스가 적용됩니다
 
