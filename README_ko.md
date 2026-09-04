@@ -239,8 +239,9 @@ A: 이 모드는 캡처용과 출력용 총 2대의 모니터가 필요합니다
 
 ## 크레딧 (감사의 말)
 
-이 프로젝트는 [IW3](https://github.com/nagadomi/nunif/)의 소스 코드를 사용합니다 (MIT 라이선스).
-이 프로젝트는 [ZipDepth](https://github.com/fabiotosi92/ZipDepth)의 소스 코드를 사용합니다 (MIT 라이선스).
+이 프로젝트는 [IW3](https://github.com/nagadomi/nunif/)의 소스 코드를 사용합니다 (MIT 라이선스).<br>
+이 프로젝트는 [ZipDepth](https://github.com/fabiotosi92/ZipDepth)의 소스 코드를 사용합니다 (MIT 라이선스).<br>
+이 프로젝트는 [Video-Depth-Anything](https://github.com/DepthAnything/Video-Depth-Anything)의 소스 코드를 사용합니다 (Apache 2.0 라이선스).<br>
 
 위 라이선스의 전체 원문은 `THIRD_PARTY_LICENSES/` 폴더를 참고하세요.
 
