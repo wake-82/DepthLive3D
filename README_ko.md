@@ -185,6 +185,7 @@ python DepthLive3D.py
 - **Edge Fix** — 전경 객체의 가장자리를 확장합니다. 3D Strength가 높아지면 전경 형태가 왜곡될 수 있는데, Edge Fix가 이를 보정하는 데 도움을 줍니다.
 - **Flicker Reduction** — 프레임을 블렌딩하여 깊이맵 깜빡임을 완화합니다. 값이 높을수록 깜빡임은 줄어들지만 잔상(고스트)이 생겨 눈이나 뇌의 피로를 유발할 수 있습니다.
 - **Preserve Screen Border** — 활성화하면 화면 가장자리를 보호합니다. 높은 3D Strength 값을 사용할 때 권장됩니다.
+- **Depth Models** - Zipdepth와 VDA 선택할 수 있습니다.<br> Zipdepth는 매우 가볍고 빠르고, VDA는 무거운 대신에 뎁스의 일관성이 우수합니다. 
 - **Depth Resolution** — 깊이맵의 해상도를 조정합니다. 해상도가 높을수록 3D 품질은 향상되지만 프레임 속도는 낮아집니다.
 - **FPS Display** — 현재 평균 변환 FPS를 화면에 표시합니다.
 - **Full SBS Screen Size** — AR 글래스 사용자를 위한 옵션입니다. Full SBS(fsbs) 출력 시 화면 크기를 조정합니다.
@@ -209,6 +210,7 @@ python DepthLive3D.py
 - **Output Format** — 3D 출력 형식을 선택합니다.
 - **3D Options** — Live 3D 옵션 문서를 참고하세요.
 - **Extract Raw Depthmap** — 체크하면 원본 깊이맵 영상을 출력 파일과 함께 내보내고 저장합니다.
+- **Extract Corrected Depthmap** - 엣지 픽스와 플리커 리더럭션이 적용된 뎁스맵 영상을 추출할 수 있습니다.<br> 결과물을 확인하는 디버그용으로 사용하세요. 
 - **Screen Border Protection** — Live 3D 옵션 문서를 참고하세요.
 - **Use FP16** — 체크하면 FP16으로 처리하고, 체크 해제하면 FP32로 깊이맵을 생성합니다.<br> FP16은 처리 속도가 더 빠르고, FP32는 정밀도가 약간 더 높습니다.
 - **Auto Mode** — 체크하면 3D 깊이 강도(depth strength) 값을 기준으로 최적화된 파라미터를 자동으로 적용합니다.
