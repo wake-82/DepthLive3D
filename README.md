@@ -210,6 +210,7 @@ Select Converted 3D to convert video files, or Live 3D to convert your computer 
 - **Output Format** — Select the 3D output format.
 - **3D Options** — Please refer to the Live 3D options documentation.
 - **Extract Raw Depthmap** — When checked, exports and saves the raw depthmap video alongside the output file.
+- **Extract Corrected Depthmap** - You can extract depth map videos with edge fix and flicker reduction applied.<br> Use this for debugging to inspect the results.
 - **Screen Border Protection** — Please refer to the Live 3D options documentation.
 - **Use FP16** — When checked, processes using FP16; when unchecked, generates depthmaps using FP32.<br> FP16 offers faster processing speeds, whereas FP32 provides slightly higher precision.
 - **Auto Mode** — When checked, automatically applies optimized parameters based on the 3D depth strength.
