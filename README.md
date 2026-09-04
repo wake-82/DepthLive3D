@@ -241,6 +241,7 @@ Important: Do not assign the same monitor to both input and output.
 
 This project uses source code from [IW3](https://github.com/nagadomi/nunif/) (MIT License).
 This project uses source code from [ZipDepth](https://github.com/fabiotosi92/ZipDepth) (MIT License).
+This project uses source code from [Video-Depth-Anything](https://github.com/DepthAnything/Video-Depth-Anything) (Apache 2.0 License).
 
 See `THIRD_PARTY_LICENSES/` for the full license texts of the above.
 
