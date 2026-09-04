@@ -80,7 +80,7 @@ Move back to the base folder:
 ```
 cd c:\DepthLive3D
 ```
-
+```
 pip install -r requirements-lock.txt
 ```
 
