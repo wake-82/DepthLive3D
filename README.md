@@ -185,6 +185,7 @@ Select Converted 3D to convert video files, or Live 3D to convert your computer 
 - **Edge Fix** — Expands the edges of foreground objects. As 3D Strength increases, foreground shapes may distort — Edge Fix helps correct this.
 - **Flicker Reduction** — Smooths out depth map flickering by blending frames. Higher values reduce flickering but can introduce ghosting/afterimages, which may cause eye or brain fatigue.
 - **Preserve Screen Border** — When enabled, protects the edges of the screen. Recommended when using a high 3D Strength value.
+- **Depth Models** - You can choose between Zipdepth and VDA.<br> Zipdepth is lightweight and fast, while VDA is heavy but offers superior depth consistency.
 - **Depth Resolution** — Adjusts the resolution of the depth map. Higher resolution improves 3D quality but reduces frame rate.
 - **FPS Display** — Displays the current average conversion FPS on screen.
 - **Full SBS Screen Size** — Designed for AR glass users. Adjusts the screen size when outputting in Full SBS (fsbs).
