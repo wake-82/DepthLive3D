@@ -79,7 +79,7 @@ pip install -e .
 ```
 cd c:\DepthLive3D
 ```
-
+```
 pip install -r requirements-lock.txt
 ```
 
