@@ -287,7 +287,7 @@ A: 이 모드는 캡처용과 출력용 총 2대의 모니터가 필요합니다
 - [PyTorch](https://pytorch.org/) — BSD 계열 라이선스
 - [PySide6](https://doc.qt.io/qtforpython/) — LGPLv3
 - [dxcam](https://github.com/ra1nty/dxcam) — MIT 라이선스
-- [OpenCV (opencv-python)](https://opencv.org/) — Apache 2.0 라이선스
+- [OpenCV (opencv-python)](https://opencv.org/) — Apache 2.0 라이선스, Copyright 2026 OpenCV team
 - [NumPy](https://numpy.org/) — BSD 라이선스
 - [PyOpenGL](http://pyopengl.sourceforge.net/) — BSD 라이선스
 - [pyopenxr](https://github.com/cmbruns/pyopenxr) — Apache 2.0 라이선스, Copyright 2021 Christopher Bruns
