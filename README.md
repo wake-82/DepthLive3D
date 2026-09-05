@@ -294,6 +294,7 @@ Built with the help of:
 - [pyopenxr](https://github.com/cmbruns/pyopenxr) — Apache 2.0 License, Copyright 2021 Christopher Bruns
 - [glfw](https://www.glfw.org/) — zlib/libpng License
 - [pywin32](https://github.com/mhammond/pywin32) — PSF License
+- [winsdk](https://github.com/pywinrt/python-winsdk) — MIT License
 - [psutil](https://github.com/giampaolo/psutil) — BSD-3-Clause License
 - [FFmpeg](https://ffmpeg.org/) — invoked as an external executable;<br>
   builds fetched from https://github.com/BtbN/FFmpeg-Builds are licensed GPL v3
