@@ -293,6 +293,7 @@ A: 이 모드는 캡처용과 출력용 총 2대의 모니터가 필요합니다
 - [pyopenxr](https://github.com/cmbruns/pyopenxr) — Apache 2.0 라이선스, Copyright 2021 Christopher Bruns
 - [glfw](https://www.glfw.org/) — zlib/libpng 라이선스
 - [pywin32](https://github.com/mhammond/pywin32) — PSF 라이선스
+- [winsdk](https://github.com/pywinrt/python-winsdk) — MIT License
 - [psutil](https://github.com/giampaolo/psutil) — BSD-3-Clause 라이선스
 - [FFmpeg](https://ffmpeg.org/) — 외부 실행 파일로 호출됨;<br>
   https://github.com/BtbN/FFmpeg-Builds 에서 받은 빌드는 GPL v3 라이선스가 적용됩니다
