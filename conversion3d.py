@@ -329,7 +329,7 @@ def edge_dilation_is_enabled(edge_dilation):
 # Matches live3d.py.
 _EDGE_FIX_LEVEL_MAP = {
     0: (0, 0),
-    1: (8, 1),
+    1: (8, 2),
     2: (9, 2),
     3: (10, 2),
     4: (11, 2),
@@ -337,14 +337,13 @@ _EDGE_FIX_LEVEL_MAP = {
 }
 
 # VDA-specific edge-fix level -> (x, y) mapping. Matches live3d.py.
-# level 1: x=4,y=0 / level 2: x=5,y=1 / level 3: x=6,y=2 / level 4: x=8,y=2 / level 5: x=9,y=2
 _EDGE_FIX_LEVEL_MAP_VDA = {
     0: (0, 0),
-    1: (3, 0),
-    2: (6, 1),
-    3: (9, 1),
-    4: (12, 2),
-    5: (15, 2),
+    1: (8, 2),
+    2: (9, 2),
+    3: (10, 2),
+    4: (11, 2),
+    5: (12, 2),
 }
 
 
