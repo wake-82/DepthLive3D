@@ -5354,7 +5354,7 @@ class Live3DGui(QMainWindow):
 
         self.spin_edge = QSpinBox()
         self.spin_edge.setRange(0, 12)
-        self.spin_edge.setValue(2)
+        self.spin_edge.setValue(4)
 
         self.spin_ema = EmaComboBox()
         self.spin_ema.setStyleSheet(_combo_white_style)
@@ -6480,7 +6480,7 @@ class Live3DGui(QMainWindow):
         self.chk_auto_mode.setChecked(True)
         self.spin_div.setValue(1.0)
         self.spin_conv.setValue(0.5)
-        self.spin_edge.setValue(2)
+        self.spin_edge.setValue(4)
         self.spin_ema.setValue(0.00)
         self.chk_preserve.setChecked(True)
         self.chk_auto_crop.setChecked(False)
@@ -6605,7 +6605,7 @@ class Live3DGui(QMainWindow):
         self.chk_auto_mode.setChecked(cfg.get("auto_mode", True))
         self.spin_div.setValue(cfg.get("divergence", 1.0))
         self.spin_conv.setValue(cfg.get("convergence", 0.5))
-        self.spin_edge.setValue(cfg.get("edge", 2))
+        self.spin_edge.setValue(cfg.get("edge", 4))
         self.spin_ema.setValue(cfg.get("ema_decay", 0.00))
         self.chk_preserve.setChecked(cfg.get("preserve", True))
         self.chk_auto_crop.setChecked(cfg.get("auto_crop", False))
