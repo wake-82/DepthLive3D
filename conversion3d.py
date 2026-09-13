@@ -279,8 +279,6 @@ def clamp_ema_value(value: float) -> float:
 
 
 def compute_auto_edge_ema(divergence: float, depth_model: str | None = None) -> tuple[int, float]:
-\
-\
                                                                     
     div = float(divergence)
     if depth_model in ("vda_s", "vda_s_metric"):
@@ -872,8 +870,6 @@ VDA_METRIC_CHECKPOINT_URLS = {
 
 
 def _import_vda_streaming_class():
-\
-\
                                                                                
     candidates = [
         ("video_depth_anything.video_depth_stream", "VideoDepthAnything"),
@@ -908,8 +904,6 @@ _VDA_STREAMING_METHOD_CANDIDATES = [
 
 
 def _find_vda_streaming_method(model):
-\
-\
                                                                              
     for name in _VDA_STREAMING_METHOD_CANDIDATES:
         if callable(getattr(model, name, None)):
@@ -922,8 +916,6 @@ _IMAGENET_STD = np.array([0.229, 0.224, 0.225], dtype=np.float32)
 
 
 def _vda_forward_infer(model, rgb: np.ndarray, input_size: int, device: str, fp16: bool) -> torch.Tensor:
-\
-\
                                                                   
     orig_h, orig_w = rgb.shape[:2]
     new_h, new_w = vda_native_hw(orig_h, orig_w, input_size)
@@ -959,9 +951,6 @@ def vda_native_hw(orig_h: int, orig_w: int, input_size: int) -> tuple[int, int]:
 
 
 class VDAStreamingAdapter:
-\
-\
-                                       
 
     def __init__(self, model, device, input_size, fp16=True, streaming_method=None, temporal_smooth=0.35):
         self.model = model
@@ -1020,9 +1009,6 @@ class VDAStreamingAdapter:
 
 
 def load_vda_streaming(encoder="vits", input_size=392, fp16=True, metric=False):
-\
-\
-\
                                                                              
     import urllib.request
 
@@ -1464,19 +1450,6 @@ class _PipeWriterThread(threading.Thread):
 
 
 class _NvencStallWatchdog(threading.Thread):
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-       
 
     def __init__(self, worker: "ConvertWorker", targets, procs, stall_seconds: float = 120.0, poll_interval: float = 2.0):
         super().__init__(daemon=True)
@@ -2512,7 +2485,6 @@ def _launcher_config_path() -> Path:
 
 
 def _load_ui_language() -> str:
-\
                                           
     try:
         with open(_launcher_config_path(), "r", encoding="utf-8") as f:
@@ -3041,13 +3013,7 @@ class StereoVideoGUI(QMainWindow):
         return TRANSLATIONS.get(CURRENT_LANG, TRANSLATIONS[_LAUNCHER_DEFAULT_LANGUAGE]).get(key, key)
 
     def _show_message_box(self, icon, title: str, text: str, buttons=QMessageBox.Ok):
-\
-\
-\
-\
-\
-\
-           
+        
         box = QMessageBox(icon, title, text, buttons, self)
         box.setWindowModality(Qt.WindowModal)
         geo = box.frameGeometry()
@@ -3163,11 +3129,7 @@ class StereoVideoGUI(QMainWindow):
         return max(64, int(round(val / 32.0) * 32))
 
     def _on_depth_model_changed(self, _index=None):
-\
-\
-\
-\
-                                                                               
+                                                                            
         model_key = self.cmb_depth_model.currentData() or "zipdepth"
         sizes = self._depth_model_input_sizes.get(model_key, self._depth_model_input_sizes["zipdepth"])
         default_size = self._depth_model_default_size.get(model_key, sizes[0])
