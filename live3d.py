@@ -1148,22 +1148,6 @@ class OpenXRStereoViewer:
         print("[OpenXR] Session thread started successfully", flush=True)
 
     def set_background(self, mode: str, rotation_deg: float = 0.0):
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
                                                    
         mode = (mode or "none").strip().lower()
         if mode not in ("none", "cinema"):
@@ -1304,10 +1288,7 @@ class OpenXRStereoViewer:
                 self._pending_bg_mode = self._bg_mode
 
     def _init_skybox_resources(self):
-\
-\
-\
-                             
+                    
         from OpenGL import GL
         from OpenGL.GL import shaders
 
@@ -1482,10 +1463,7 @@ class OpenXRStereoViewer:
         GL.glDepthMask(GL.GL_TRUE)
 
     def _build_panel_mesh_vertices(self, curve_value: float) -> np.ndarray:
-\
-\
-\
-                                                                          
+                                                                         
         segments = self._CURVE_SEGMENTS
         lo, hi = self._panel_curve_range
         c = max(lo, min(hi, curve_value)) / (hi - lo if hi != lo else 1.0)
@@ -1514,8 +1492,6 @@ class OpenXRStereoViewer:
         return verts.flatten()
 
     def _sync_panel_mesh(self, curve_value: float):
-\
-\
                                              
         from OpenGL import GL
 
@@ -3159,17 +3135,7 @@ VDA_METRIC_CHECKPOINT_URLS = {
 
 
 def _import_vda_streaming_class():
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-       
+    
     candidates = [
         ("video_depth_anything.video_depth_stream", "VideoDepthAnything"),
         ("video_depth_anything.video_depth", "VideoDepthAnything"),
@@ -3203,8 +3169,6 @@ _VDA_STREAMING_METHOD_CANDIDATES = [
 
 
 def _find_vda_streaming_method(model):
-\
-\
                                                                              
     for name in _VDA_STREAMING_METHOD_CANDIDATES:
         if callable(getattr(model, name, None)):
@@ -3217,17 +3181,7 @@ _IMAGENET_STD = np.array([0.229, 0.224, 0.225], dtype=np.float32)
 
 
 def _vda_forward_infer(model, rgb: np.ndarray, input_size: int, device: str, fp16: bool) -> torch.Tensor:
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-                                                         
+                                                    
     orig_h, orig_w = rgb.shape[:2]
     scale = input_size / min(orig_h, orig_w)
     new_h = max(14, int(round(orig_h * scale / 14)) * 14)
@@ -3252,10 +3206,7 @@ def _vda_forward_infer(model, rgb: np.ndarray, input_size: int, device: str, fp1
 
 
 class VDAStreamingAdapter:
-\
-\
-                                       
-
+                                
     def __init__(self, model, device, input_size, fp16=True, streaming_method=None, temporal_smooth=0.35):
         self.model = model
         self.device = device
@@ -3320,9 +3271,6 @@ class VDAStreamingAdapter:
 
 
 def load_vda_streaming(encoder="vits", input_size=336, fp16=True, metric=False):
-\
-\
-\
                                                                              
     import urllib.request
 
@@ -3616,18 +3564,6 @@ def gpu_resize_dual(raw: np.ndarray, proc_w: int, proc_h: int, depth_w: int, dep
 
 
 def pack_frame_gpu(left_t: torch.Tensor, right_t: torch.Tensor, fmt: str) -> torch.Tensor:
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
        
     if fmt in ("hsbs", "fsbs"):
                                                                     
@@ -4225,10 +4161,6 @@ def restore_windows_system_cursor():
 
 
 class MagCaptureWorker(threading.Thread):
-\
-\
-\
-       
 
     def __init__(self, monitor_idx: int, target_fps: float, frame_q, running, exclude_hwnds=None):
         super().__init__(daemon=True, name="MagCaptureWorker")
@@ -4964,7 +4896,6 @@ def _launcher_config_path() -> Path:
 
 
 def _load_ui_language() -> str:
-\
                                           
     try:
         with open(_launcher_config_path(), "r", encoding="utf-8") as f:
@@ -5780,9 +5711,6 @@ class Live3DGui(QMainWindow):
             self.cmb_input_mon.setCurrentIndex(0)
 
     def _populate_output_monitor_combo(self, keep_selection: bool = False):
-\
-\
-\
                                                                       
         prev_data = self.cmb_output_mon.currentData() if keep_selection else None
         self.cmb_output_mon.blockSignals(True)
@@ -5830,8 +5758,6 @@ class Live3DGui(QMainWindow):
             self.cmb_output_mon.setCurrentIndex(found)
 
     def _on_input_monitor_changed(self, _idx: int = -1):
-\
-\
                                                                     
         if self._current_mode() != "dual_monitor":
             return
@@ -5844,8 +5770,6 @@ class Live3DGui(QMainWindow):
             self._set_output_monitor_value(alt)
 
     def _on_output_monitor_changed(self, _idx: int = -1):
-\
-\
                                                                    
         if self._current_mode() != "dual_monitor":
             return
@@ -5860,8 +5784,6 @@ class Live3DGui(QMainWindow):
             self._set_input_monitor_value(alt)
 
     def _find_alternate_monitor_value(self, exclude: int):
-\
-\
                                                                           
         values = []
         for i in range(self.cmb_input_mon.count()):
@@ -6001,9 +5923,6 @@ class Live3DGui(QMainWindow):
         self._update_fps_options()
 
     def _pc_fast_capture_selected(self) -> bool:
-\
-\
-\
                                                                                   
         _mode = self._current_mode()
         if _mode != "pc":
@@ -6105,10 +6024,6 @@ class Live3DGui(QMainWindow):
         return max(64, int(round(val / 32.0) * 32))
 
     def _on_depth_model_changed(self, _index=None):
-\
-\
-\
-\
                                                                                
         model_key = self.cmb_depth_model.currentData() or "zipdepth"
         sizes = self._depth_model_input_sizes.get(model_key, self._depth_model_input_sizes["zipdepth"])
