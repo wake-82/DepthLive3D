@@ -24,9 +24,6 @@ from PySide6.QtCore import QProcess, Qt, QThread, Signal, QEventLoop
 from PySide6.QtGui import QFont
 
 
-# ------------------------------------------------------------------
-# ffmpeg 실행 파일 경로 탐색 (별도 모듈 임포트 없이 자체적으로 처리)
-# ------------------------------------------------------------------
 def _get_base_dir_for_ffmpeg():
     if getattr(sys, 'frozen', False):
         return os.path.dirname(sys.executable)
@@ -73,8 +70,7 @@ def fetch_latest_ffmpeg_asset_url():
 
 
 def download_and_install_ffmpeg(progress_cb=None, cancel_cb=None):
-    """ffmpeg/ffprobe를 공식 FFmpeg-Builds 릴리스에서 내려받아
-    프로그램 폴더에 설치합니다. (성공 여부, 에러 메시지) 튜플을 반환합니다."""
+
     base_dir = _get_base_dir_for_ffmpeg()
     try:
         result = fetch_latest_ffmpeg_asset_url()
@@ -147,8 +143,6 @@ class FFmpegDownloadWorker(QThread):
 
 
 def ensure_ffmpeg_available(parent, lang: str) -> bool:
-    """ffmpeg가 없으면 (라이센스 안내 -> 다운로드 진행 -> 결과 안내) 순으로
-    프로그램 창 안쪽에 알림창을 띄우며 자동으로 설치합니다."""
     global FFMPEG_EXE, FFPROBE_EXE, FFMPEG_MISSING
 
     FFMPEG_EXE = get_executable("ffmpeg")
@@ -159,7 +153,6 @@ def ensure_ffmpeg_available(parent, lang: str) -> bool:
 
     t = TRANSLATIONS.get(lang, TRANSLATIONS[DEFAULT_LANGUAGE])
 
-    # 1) 라이센스 / 안내 알림창 (프로그램 창 안쪽)
     proceed = QMessageBox.question(
         parent,
         t["ffmpeg_license_title"],
@@ -171,7 +164,6 @@ def ensure_ffmpeg_available(parent, lang: str) -> bool:
         QMessageBox.warning(parent, t["ffmpeg_missing_title"], t["ffmpeg_missing_msg"].format(dir=_get_base_dir_for_ffmpeg()))
         return False
 
-    # 2) 다운로드 진행 알림창 (프로그램 창 안쪽, 모달)
     dlg = QProgressDialog(t["ffmpeg_downloading_msg"], t["ffmpeg_cancel"], 0, 100, parent)
     dlg.setWindowTitle(t["ffmpeg_downloading_title"])
     dlg.setWindowModality(Qt.WindowModal)
@@ -221,12 +213,7 @@ def ensure_ffmpeg_available(parent, lang: str) -> bool:
 
 
 
-# ------------------------------------------------------------------
-# 언어(번역) 관련 설정
-# ------------------------------------------------------------------
-# 이 설정 파일은 런처(DepthLive3d.py)뿐 아니라 나중에 conversion3d.py,
-# live3d.py 등에서도 같은 경로를 읽어 현재 선택된 언어를 따라갈 수 있도록
-# 실행 파일과 같은 폴더에 저장합니다.
+
 def _get_base_dir():
     if getattr(sys, 'frozen', False):
         return os.path.dirname(sys.executable)
@@ -404,7 +391,6 @@ LANGUAGE_DISPLAY_NAMES = {
 
 
 def load_language():
-    """설정 파일에서 저장된 언어를 읽어옵니다. 없으면 기본값(영어)을 반환합니다."""
     try:
         with open(CONFIG_PATH, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -417,9 +403,7 @@ def load_language():
 
 
 def save_language(lang: str):
-    """선택된 언어를 설정 파일에 저장합니다.
-    conversion3d.py / live3d.py 등 다른 모듈에서도 이 파일을 읽어
-    동일한 언어 설정을 따라갈 수 있습니다."""
+
     try:
         data = {}
         if os.path.exists(CONFIG_PATH):
@@ -436,9 +420,9 @@ def save_language(lang: str):
 
 
 class AudioSyncWorker(QThread):
-    """ffmpeg를 이용해 오디오 딜레이 작업을 백그라운드에서 실행하는 워커 스레드"""
+
     log_signal = Signal(str)
-    finished_signal = Signal(bool, str)  # (성공 여부, 결과 메시지 / 에러 메시지)
+    finished_signal = Signal(bool, str) 
 
     def __init__(self, cmd, out_file):
         super().__init__()
@@ -492,15 +476,14 @@ class AudioSyncWorker(QThread):
 
 
 class AudioSyncWindow(QMainWindow):
-    """영상 오디오 딜레이(싱크) 조정 창.
-    +값은 숫자만 입력해도 자동으로 +로 처리되고, -를 입력할 때만 음수로 처리됩니다."""
+
 
     def __init__(self, lang: str):
         super().__init__()
         self.current_lang = lang if lang in SUPPORTED_LANGUAGES else DEFAULT_LANGUAGE
         self.worker = None
 
-        # Conversion 3D 창과 동일한 크기
+
         self.resize(880, 600)
         self.setStyleSheet("""
             QMainWindow { background-color: #f0f2f5; }
@@ -549,7 +532,6 @@ class AudioSyncWindow(QMainWindow):
         outer.setContentsMargins(15, 15, 15, 15)
         outer.setSpacing(10)
 
-        # ---- 경로 설정 ----
         self.path_group = QGroupBox()
         path_grid = QGridLayout(self.path_group)
 
@@ -572,7 +554,7 @@ class AudioSyncWindow(QMainWindow):
         path_grid.setColumnStretch(1, 1)
         outer.addWidget(self.path_group)
 
-        # ---- 딜레이 설정 ----
+
         self.opt_group = QGroupBox()
         opt_layout = QHBoxLayout(self.opt_group)
 
@@ -589,7 +571,7 @@ class AudioSyncWindow(QMainWindow):
         opt_layout.addStretch()
         outer.addWidget(self.opt_group)
 
-        # ---- 상태 & 버튼 ----
+
         status_bar = QHBoxLayout()
         self.lbl_status = QLabel()
         self.lbl_status.setProperty("class", "status")
@@ -609,7 +591,7 @@ class AudioSyncWindow(QMainWindow):
         btn_bar.addStretch()
         outer.addLayout(btn_bar)
 
-        # ---- 로그 ----
+
         self.log_widget = QTextEdit()
         self.log_widget.setReadOnly(True)
         outer.addWidget(self.log_widget, 1)
@@ -658,7 +640,7 @@ class AudioSyncWindow(QMainWindow):
 
     @staticmethod
     def _parse_delay_ms(text: str) -> int:
-        """숫자만 입력하면 +로, '-'를 입력할 때만 -로 처리합니다."""
+
         t = text.strip().replace(" ", "")
         if t.startswith("+"):
             t = t[1:]
@@ -849,7 +831,7 @@ class LauncherWindow(QMainWindow):
         left_layout.addSpacing(20)
         left_layout.addWidget(self.btn_conv)
 
-        # ---- Live 3D 카드 ----
+
         self.right_frame = QFrame()
         right_layout = QVBoxLayout(self.right_frame)
         right_layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
@@ -875,7 +857,7 @@ class LauncherWindow(QMainWindow):
         right_layout.addSpacing(20)
         right_layout.addWidget(self.btn_live)
 
-        # ---- Audio Sync 카드 (라이브 3D 옆) ----
+
         self.sync_frame = QFrame()
         sync_layout = QVBoxLayout(self.sync_frame)
         sync_layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
@@ -907,7 +889,7 @@ class LauncherWindow(QMainWindow):
 
         outer_layout.addLayout(main_layout)
 
-        # ---- 언어 선택 영역 (하단) ----
+
         lang_bar = QHBoxLayout()
         lang_bar.addStretch()
 
@@ -925,14 +907,14 @@ class LauncherWindow(QMainWindow):
 
         outer_layout.addLayout(lang_bar)
 
-        # 초기 텍스트 및 콤보박스 상태 적용
+
         self.apply_language(self.current_lang, save=False)
 
     def tr_text(self, key):
         return TRANSLATIONS.get(self.current_lang, TRANSLATIONS[DEFAULT_LANGUAGE]).get(key, key)
 
     def apply_language(self, lang: str, save: bool = True):
-        """선택된 언어를 즉시 UI에 반영합니다."""
+
         if lang not in SUPPORTED_LANGUAGES:
             lang = DEFAULT_LANGUAGE
         self.current_lang = lang
@@ -952,7 +934,7 @@ class LauncherWindow(QMainWindow):
         if self.audio_sync_window is not None:
             self.audio_sync_window.apply_language(lang)
 
-        # 콤보박스가 현재 언어를 가리키도록 동기화 (신호 재귀 방지)
+
         idx = self.combo_language.findData(lang)
         if idx != -1 and self.combo_language.currentIndex() != idx:
             self.combo_language.blockSignals(True)
@@ -999,8 +981,7 @@ class LauncherWindow(QMainWindow):
             self.close()
 
     def launch_audio_sync(self):
-        """소리 싱크 창은 별도 프로세스로 실행하지 않고,
-        현재 실행 중인 DepthLive3D 프로세스 안에서 바로 엽니다 (추가 임포트 없음)."""
+
         if self.audio_sync_window is None:
             self.audio_sync_window = AudioSyncWindow(self.current_lang)
         else:
