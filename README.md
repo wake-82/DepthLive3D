@@ -300,3 +300,6 @@ Built with the help of:
   builds fetched from https://github.com/BtbN/FFmpeg-Builds are licensed GPL v3
 
 Full license texts for each third-party library are included in the THIRD_PARTY_LICENSES/ folder.
+
+## Next update
+Inpaint mode
