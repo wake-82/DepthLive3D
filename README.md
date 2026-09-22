@@ -322,11 +322,11 @@ This project's stereo generation approach is inspired by:
 > *Entropy*, 25(8), 1212. https://doi.org/10.3390/e25081212
 
 ## 3D Demo Video – 2D Source: Big Buck Bunny
-© 2008 Blender Foundation / www.bigbuckbunny.org
+© 2008 Blender Foundation / https://peach.blender.org/
 
 Licensed under the Creative Commons Attribution 3.0 (CC BY 3.0) license.
 
-Original: https://peach.blender.org/
+Original: https://www.bigbuckbunny.org
 License: https://creativecommons.org/licenses/by/3.0/
 
 Demo video has been converted from 2D to 3D using DepthLive3D.
