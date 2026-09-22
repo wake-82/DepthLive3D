@@ -6,6 +6,10 @@
 ![preview](./preview.png)
 DepthLive3D는 AI 기반 깊이 매핑과 OpenXR 기술을 활용하여 PC 화면을 VR 환경 내에서 실시간으로 3D로 변환하고, 오프라인 2D-to-3D 비디오 파일 변환도 지원하는 무료 프로그램입니다.
 
+## 3D 변환 샘플 영상
+[Big Buck Bunny](https://youtu.be/GoZfcv_eMXA)
+- 2D Source 720p, VDA-S Stream, Depth Resolution 630, Stereo Strength 2.0, Convergence 0.5, Auto Mode, Fast Inpaint]
+
 ## 업데이트 내역
 - **v1.0:** 최초 배포
 - **v2.0:**  VDA 모델 추가
@@ -315,6 +319,16 @@ A: 이 모드는 캡처용과 출력용 모니터 총 2대가 필요합니다.<b
 > Hachaj, T. (2023). Adaptable 2D to 3D Stereo Vision Image Conversion Based on a
 > Deep Convolutional Neural Network and Fast Inpaint Algorithm.
 > *Entropy*, 25(8), 1212. https://doi.org/10.3390/e25081212
+
+## 3D 데모 영상 – 2D 소스: Big Buck Bunny
+© 2008 Blender Foundation / https://peach.blender.org/
+
+크리에이티브 커먼즈 저작자표시 3.0 (CC BY 3.0) 라이선스에 따라 이용할 수 있습니다.
+
+Original: https://www.bigbuckbunny.org
+License: https://creativecommons.org/licenses/by/3.0/
+
+본 데모 영상은 DepthLive3D를 사용하여 2D에서 3D로 변환되었습니다.
 
 ## 다음 업데이트
 
