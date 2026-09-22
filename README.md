@@ -225,6 +225,7 @@ Select Converted 3D to convert video files, or Live 3D to convert your computer 
 - **MKV HDR Normalize** — When checked, re-encodes HDR video into a standard video format before starting the conversion process.
 - **Auto Letterbox Crop** — Automatically detects and crops top and bottom letterboxes.<br> Note that detection may fail if text or subtitles overlap the letterbox area.
 - **Pad to 16:9** — Pads non-16:9 videos with letterboxes to conform to a 16:9 aspect ratio.<br> Recommended for use in conjunction with Auto Letterbox Crop.
+- **Sound Booster** — When enabled, amplifies the audio volume by 400% during conversion.
 - **Start Time, End Time** — When enabled, allows specifying a custom time frame to convert a specific clip of the video.
 - **Start / Stop Buttons** — Starts or halts the video conversion process.
 
