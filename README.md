@@ -6,6 +6,11 @@
 ![preview](./preview.png)
 DepthLive3D is a free program that uses AI-based depth mapping and OpenXR technology to convert your live PC screen into 3D in real time within a VR environment, alongside offline 2D-to-3D video file conversion.
 
+## Updates
+- **v1.0:** Initial release
+- **v2.0:**  Added VDA model
+- **v3.0:** Added Inpaint mode and Depth AA mode
+
 ## Requirements
 
 - **OS:** Windows 10/11 (64-bit)
@@ -74,25 +79,20 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-### 5. Install the pinned dependency versions
-
-Move back to the base folder:
-```
-cd c:\DepthLive3D
-```
-```
-pip install -r requirements-lock.txt
-```
-
-### 6. Move back to the base folder
+### 5. Move back to the base folder
 ```
 cd c:\DepthLive3D
 ```
 
-### 7. Install DepthLive3D
+### 6. Install DepthLive3D
 ```
 git clone https://github.com/wake-82/DepthLive3D.git
 move C:\DepthLive3D\ZipDepth C:\DepthLive3D\DepthLive3D\
+```
+### 7. Install the pinned dependency versions
+
+```
+pip install -r requirements-lock.txt
 ```
 
 ### 8. Install Video-Depth-Anything
@@ -191,6 +191,8 @@ Select Converted 3D to convert video files, or Live 3D to convert your computer 
 - **Preserve Screen Border** — When enabled, protects the edges of the screen. Recommended when using a high 3D Strength value.
 - **Depth Models** - You can choose between Zipdepth and VDA.<br> Zipdepth is lightweight and fast, while VDA is heavy but offers superior depth consistency.
 - **Depth Resolution** — Adjusts the resolution of the depth map. Higher resolution improves 3D quality but reduces frame rate.
+- **Method** — You can choose between Normal and FAST Inpaint. The Normal method provides fast conversion, while FAST Inpaint is slower but enhances 3D video quality.
+- **Depth AA** — Applies anti-aliasing to the depth map to smooth out its edges. Recommended when using the VDA model.
 - **FPS Display** — Displays the current average conversion FPS on screen.
 - **Full SBS Screen Size** — Designed for AR glass users. Adjusts the screen size when outputting in Full SBS (fsbs).
 - **VR Screen Options** — Configure screen size, height, distance, center position, background and screen reset.
@@ -225,6 +227,12 @@ Select Converted 3D to convert video files, or Live 3D to convert your computer 
 - **Pad to 16:9** — Pads non-16:9 videos with letterboxes to conform to a 16:9 aspect ratio.<br> Recommended for use in conjunction with Auto Letterbox Crop.
 - **Start Time, End Time** — When enabled, allows specifying a custom time frame to convert a specific clip of the video.
 - **Start / Stop Buttons** — Starts or halts the video conversion process.
+
+---
+
+## Audio Sync
+
+- Used to fix audio sync issues after 3D video conversion. Adjust the delay value to advance or delay the audio for proper sync.
 
 ---
 
@@ -300,6 +308,12 @@ Built with the help of:
   builds fetched from https://github.com/BtbN/FFmpeg-Builds are licensed GPL v3
 
 Full license texts for each third-party library are included in the THIRD_PARTY_LICENSES/ folder.
+
+## References
+This project's stereo generation approach is inspired by:
+> Hachaj, T. (2023). Adaptable 2D to 3D Stereo Vision Image Conversion Based on a
+> Deep Convolutional Neural Network and Fast Inpaint Algorithm.
+> *Entropy*, 25(8), 1212. https://doi.org/10.3390/e25081212
 
 ## Next update
 Inpaint mode
