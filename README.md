@@ -316,4 +316,4 @@ This project's stereo generation approach is inspired by:
 > *Entropy*, 25(8), 1212. https://doi.org/10.3390/e25081212
 
 ## Next update
-Inpaint mode
+
