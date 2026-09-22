@@ -225,6 +225,7 @@ python DepthLive3D.py
 - **MKV HDR Normalize** — 체크 시 변환 시작 전 HDR 비디오를 표준 비디오 형식으로 재인코딩합니다.
 - **Auto Letterbox Crop** — 위아래 레터박스를 자동으로 감지하고 잘라냅니다.<br> 레터박스 영역에 자막이나 텍스트가 겹쳐 있으면 감지에 실패할 수 있습니다.
 - **Pad to 16:9** — 16:9 비율이 아닌 비디오에 레터박스를 추가하여 16:9 비율로 맞춥니다.<br> Auto Letterbox Crop과 함께 사용하는 것을 권장합니다.
+- **Sound Booster** — 활성화 시 오디오 음량이 400% 증폭되어 변환됩니다.
 - **Start Time, End Time** — 활성화하면 비디오의 특정 구간을 지정하여 변환할 수 있습니다.
 - **Start / Stop Buttons** — 비디오 변환을 시작하거나 중지합니다.
 
