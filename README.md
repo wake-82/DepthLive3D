@@ -288,6 +288,9 @@ Setup Preparation: If you lack physical monitors, add a second display using a v
 Configuration: Set your Windows display settings to Extend, then select different monitors for input and output in the program. (e.g., Input: Monitor 0 / Output: Monitor 1)<br>
 Important: Do not assign the same monitor to both input and output.
 
+**Q: A black line appears on the screen in Inpaint mode.**<br>
+A: Disabling the 'Screen Border Protection' option will resolve the issue.
+
 ---
 
 ## Credits (Acknowledgements)
