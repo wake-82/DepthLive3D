@@ -1,7 +1,7 @@
 # DepthLive3D 
 
-![Icon](https://raw.githubusercontent.com/wake-82/DepthLive3D/refs/heads/main/icon.ico)
-
+![Icon](https://raw.githubusercontent.com/wake-82/DepthLive3D/refs/heads/main/icon.ico)<BR>
+[README_KO](https://github.com/wake-82/DepthLive3D/blob/main/README_ko.md)
 
 
 ## What is DepthLive3D?
