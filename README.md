@@ -16,7 +16,7 @@ DepthLive3D is a free program that uses AI-based depth mapping and OpenXR techno
 ## Updates
 - **v1.0:** Initial release
 - **v2.0:**  Added VDA model
-- **v3.0:** Added Inpaint mode and Depth AA mode
+- **v3.0:** Added Inpaint mode and Depth AA mode, Optimization and bug fixes
 
 ## Requirements
 
