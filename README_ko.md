@@ -14,7 +14,7 @@ DepthLive3D는 AI 기반 깊이 매핑과 OpenXR 기술을 활용하여 PC 화�
 - **v1.0:** 최초 배포
 - **v2.0:**  VDA 모델 추가
 - **v3.0:** 인페인트 모드 및 Depth AA 모드 추가, 최적화 및 버그 수정
-- **v3.1:** Distill-Any-Depth 모델 추가
+- **v3.1:** Distill-Any-Depth 모델 추가, Conversion3D에서 최신 FFmpeg 빌드 사용 시 변환 오류가 발생하던 문제를 수정했습니다.
 
 ## 요구 사항
 
