@@ -224,7 +224,7 @@ python DepthLive3D.py
 - **Edge Fix** — 전경 오브젝트의 가장자리를 확장합니다. 3D Strength가 높아질수록 전경 형태가 왜곡될 수 있으며, Edge Fix가 이를 보정합니다.
 - **Flicker Reduction** — 프레임을 블렌딩하여 깊이 맵 깜빡임을 완화합니다. 값이 높을수록 깜빡임은 줄어들지만 잔상(고스팅)이 발생할 수 있으며, 눈과 뇌 피로를 유발할 수 있습니다.
 - **Preserve Screen Border** — 활성화하면 화면 가장자리를 보호합니다. 3D Strength 값이 높을 때 권장합니다.
-- **Depth Models** - Zipdepth와 VDA 중 선택할 수 있습니다.<br> Zipdepth는 가볍고 빠르며, VDA는 무겁지만 깊이 일관성이 뛰어납니다.
+- **Depth Models** - Zipdepth, Distill-Any-Depth, VDA 가운데 선택할 수 있습니다. Zipdepth는 가볍고 빠르며, VDA는 속도는 느리지만 시간적 일관성이 뛰어납니다. Distill-Any-Depth는 두 모델의 균형을 맞춘 밸런스형 모델입니다.
 - **Depth Resolution** — 깊이 맵의 해상도를 조정합니다. 해상도가 높을수록 3D 품질이 향상되지만 프레임 레이트가 감소합니다.
 - **Method** — Normal과 FAST Inpaint 중 선택할 수 있습니다. Normal은 빠른 변환을 제공하며, FAST Inpaint는 느리지만 3D 비디오 품질을 향상시킵니다.
 - **Depth AA** — 깊이 맵에 안티앨리어싱을 적용하여 가장자리를 부드럽게 합니다. VDA 모델 사용 시 권장합니다.
