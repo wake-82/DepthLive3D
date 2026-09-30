@@ -299,7 +299,10 @@ A: Disabling the 'Screen Border Protection' option will resolve the issue.
 
 This project uses source code from [IW3](https://github.com/nagadomi/nunif/) (MIT License).<br>
 This project uses source code from [ZipDepth](https://github.com/fabiotosi92/ZipDepth) (MIT License).<br>
+This project uses source code from [Distill-Any-Depth](https://github.com/Westlake-AGI-Lab/Distill-Any-Depth) (MIT License).<br>
+This project uses source code from [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2) (Apache 2.0 License, Copyright 2024 Depth Anything Authors).<br>
 This project uses source code from [Video-Depth-Anything](https://github.com/DepthAnything/Video-Depth-Anything) (Apache 2.0 License, Copyright 2025 ByteDance).<br>
+
 
 See `THIRD_PARTY_LICENSES/` for the full license texts of the above.
 
