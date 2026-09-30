@@ -296,6 +296,8 @@ A: 'Screen Border Protection' 옵션을 비활성화하시면 검은 선이 사�
 
 이 프로젝트는 [IW3](https://github.com/nagadomi/nunif/)의 소스 코드를 사용합니다 (MIT 라이선스).<br>
 이 프로젝트는 [ZipDepth](https://github.com/fabiotosi92/ZipDepth)의 소스 코드를 사용합니다 (MIT 라이선스).<br>
+이 프로젝트는 [Distill-Any-Depth](https://github.com/Westlake-AGI-Lab/Distill-Any-Depth)의 소스 코드를 사용합니다  (MIT 라이선스).<br>
+이 프로젝트는 [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2)의 소스 코드를 사용합니다  (Apache 2.0 라이선스, Copyright 2024 Depth Anything Authors).<br>
 이 프로젝트는 [Video-Depth-Anything](https://github.com/DepthAnything/Video-Depth-Anything)의 소스 코드를 사용합니다 (Apache 2.0 라이선스, Copyright 2025 ByteDance).<br>
 
 전체 라이선스 텍스트는 `THIRD_PARTY_LICENSES/`를 참조하세요.
