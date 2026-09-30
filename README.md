@@ -131,7 +131,37 @@ Move back to the base folder:
 cd c:\DepthLive3D
 ```
 
-### 9. Install PyTorch (CUDA)
+### 9. Install Depth-Anything-V2 and the Distill-Any-Depth model
+
+The Distill-Any-Depth Small model uses the plain official [Depth-Anything-V2](https://github.com/DepthAnything/Depth-Anything-V2) source code (vits) as-is; only the checkpoint comes from [Distill-Any-Depth](https://github.com/Westlake-AGI-Lab/Distill-Any-Depth).
+
+Move into the DepthLive3D folder:
+```
+cd c:\DepthLive3D\DepthLive3D
+```
+
+Clone the Depth-Anything-V2 source code:
+```
+git clone --depth 1 https://github.com/DepthAnything/Depth-Anything-V2.git
+```
+
+Create the checkpoints folder and download the Distill-Any-Depth Small checkpoint (`.safetensors`):
+```
+mkdir Depth-Anything-V2\checkpoints
+curl -L -o Depth-Anything-V2\checkpoints\distill_any_depth_small.safetensors "https://huggingface.co/xingyang1/Distill-Any-Depth/resolve/main/small/model.safetensors?download=true"
+```
+
+Additional libraries: the Distill-Any-Depth Small checkpoint needs `safetensors` and `huggingface_hub`. Both are already included in `requirements-lock.txt` (step 7), so no extra command is needed. If either one is missing, install it manually:
+```
+pip install safetensors huggingface_hub
+```
+
+Move back to the base folder:
+```
+cd c:\DepthLive3D
+```
+
+### 10. Install PyTorch (CUDA)
 
 The exact pinned/tested combination is **torch 2.13.0 + torchvision 0.28.0**.
 
@@ -160,7 +190,7 @@ Example output (cu126):
 True
 ```
 
-### 10. Run the program
+### 11. Run the program
 ```
 cd c:\DepthLive3D\DepthLive3D
 python DepthLive3D.py
@@ -174,7 +204,7 @@ cd c:\DepthLive3D\DepthLive3D
 python DepthLive3D.py
 ```
 
-### 11. Start the conversion
+### 12. Start the conversion
 Select Converted 3D to convert video files, or Live 3D to convert your computer screen to 3D in real time.
 
 ---
