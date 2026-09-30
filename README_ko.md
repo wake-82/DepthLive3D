@@ -128,7 +128,37 @@ curl -L -o Video-Depth-Anything\checkpoints\metric_video_depth_anything_vits.pth
 cd c:\DepthLive3D
 ```
 
-### 9. PyTorch (CUDA) 설치
+### 9. Depth-Anything-V2 및 Distill-Any-Depth 모델 설치
+
+Distill-Any-Depth Small 모델은 공식 [Depth-Anything-V2](https://github.com/DepthAnything/Depth-Anything-V2) 소스 코드(vits)를 그대로 사용하며, 체크포인트만 [Distill-Any-Depth](https://github.com/Westlake-AGI-Lab/Distill-Any-Depth)의 것을 사용합니다.
+
+DepthLive3D 폴더로 이동:
+```
+cd c:\DepthLive3D\DepthLive3D
+```
+
+Depth-Anything-V2 소스 코드 클론:
+```
+git clone --depth 1 https://github.com/DepthAnything/Depth-Anything-V2.git
+```
+
+checkpoints 폴더를 생성하고 Distill-Any-Depth Small 체크포인트(`.safetensors`)를 다운로드:
+```
+mkdir Depth-Anything-V2\checkpoints
+curl -L -o Depth-Anything-V2\checkpoints\distill_any_depth_small.safetensors "https://huggingface.co/xingyang1/Distill-Any-Depth/resolve/main/small/model.safetensors?download=true"
+```
+
+추가 라이브러리: Distill-Any-Depth Small 체크포인트를 읽으려면 `safetensors`와 `huggingface_hub`가 필요합니다. 두 라이브러리는 이미 `requirements-lock.txt`(7단계)에 포함되어 있어 별도 명령이 필요하지 않습니다. 둘 중 하나라도 없다면 직접 설치하세요:
+```
+pip install safetensors huggingface_hub
+```
+
+기본 폴더로 이동:
+```
+cd c:\DepthLive3D
+```
+
+### 10. PyTorch (CUDA) 설치
 
 검증된 조합은 **torch 2.13.0 + torchvision 0.28.0**입니다.
 
@@ -157,7 +187,7 @@ python -c "import torch; print(torch.__version__); print(torch.cuda.is_available
 True
 ```
 
-### 10. 프로그램 실행
+### 11. 프로그램 실행
 ```
 cd c:\DepthLive3D\DepthLive3D
 python DepthLive3D.py
@@ -171,7 +201,7 @@ cd c:\DepthLive3D\DepthLive3D
 python DepthLive3D.py
 ```
 
-### 11. 변환 시작
+### 12. 변환 시작
 비디오 파일을 변환하려면 Converted 3D를, 컴퓨터 화면을 실시간으로 3D로 변환하려면 Live 3D를 선택합니다.
 
 ---
