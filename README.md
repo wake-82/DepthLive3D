@@ -361,6 +361,13 @@ This project's stereo generation approach is inspired by:
 > Deep Convolutional Neural Network and Fast Inpaint Algorithm.
 > *Entropy*, 25(8), 1212. https://doi.org/10.3390/e25081212
 
+The dubois-anaglyph 3D format is based on the least-squares projection method:
+> Dubois, E. (2001). A projection method to generate anaglyph stereo images.
+> *Proc. IEEE Int. Conf. Acoustics, Speech, and Signal Processing (ICASSP)*, Salt Lake City, UT, vol. 3, pp. 1661–1664.
+>
+> Dubois, E. (2009, March). Conversion of a Stereo Pair to Anaglyph with the Least-Squares
+> Projection Method. University of Ottawa. https://www.site.uottawa.ca/~edubois/anaglyph/
+
 ## 3D Demo Video – 2D Source: Big Buck Bunny
 © 2008 Blender Foundation / https://peach.blender.org/
 
