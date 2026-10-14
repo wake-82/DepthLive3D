@@ -357,6 +357,13 @@ A: 'Screen Border Protection' 옵션을 비활성화하시면 검은 선이 사�
 > Deep Convolutional Neural Network and Fast Inpaint Algorithm.
 > *Entropy*, 25(8), 1212. https://doi.org/10.3390/e25081212
 
+dubois-anaglyph 3D 형식은 최소제곱 투영(least-squares projection) 방식을 기반으로 합니다:
+> Dubois, E. (2001). A projection method to generate anaglyph stereo images.
+> *Proc. IEEE Int. Conf. Acoustics, Speech, and Signal Processing (ICASSP)*, Salt Lake City, UT, vol. 3, pp. 1661–1664.
+>
+> Dubois, E. (2009, March). Conversion of a Stereo Pair to Anaglyph with the Least-Squares
+> Projection Method. University of Ottawa. https://www.site.uottawa.ca/~edubois/anaglyph/
+
 ## 3D 데모 영상 – 2D 소스: Big Buck Bunny
 © 2008 Blender Foundation / https://peach.blender.org/
 
