@@ -333,6 +333,7 @@ This project uses source code from [ZipDepth](https://github.com/fabiotosi92/Zip
 This project uses source code from [Distill-Any-Depth](https://github.com/Westlake-AGI-Lab/Distill-Any-Depth) (MIT License).<br>
 This project uses source code from [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2) (Apache 2.0 License, Copyright 2024 Depth Anything Authors).<br>
 This project uses source code from [Video-Depth-Anything](https://github.com/DepthAnything/Video-Depth-Anything) (Apache 2.0 License, Copyright 2025 ByteDance).<br>
+This project uses source code from [iw3-inpaint](https://github.com/Rowan3D/iw3-inpaint) (MIT License).<br>
 
 
 See `THIRD_PARTY_LICENSES/` for the full license texts of the above.
@@ -371,4 +372,4 @@ License: https://creativecommons.org/licenses/by/3.0/
 Demo video has been converted from 2D to 3D using DepthLive3D.
 
 ## Next update
-
+We plan to add a Medium Inpaint feature to Conversion 3D, and introduce a mouse cursor ON/OFF option in Live 3D to resolve the issue where the mouse pointer appears duplicated in Virtual Desktop.
