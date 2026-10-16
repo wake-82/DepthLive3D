@@ -385,4 +385,4 @@ License: https://creativecommons.org/licenses/by/3.0/
 Demo video has been converted from 2D to 3D using DepthLive3D.
 
 ## Next update
-We plan to add a Medium Inpaint feature to Conversion 3D, and introduce a mouse cursor ON/OFF option in Live 3D to resolve the issue where the mouse pointer appears duplicated in Virtual Desktop.
+
