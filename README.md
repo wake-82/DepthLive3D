@@ -16,8 +16,9 @@ DepthLive3D is a free program that uses AI-based depth mapping and OpenXR techno
 ## Updates
 - **v1.0:** Initial release
 - **v2.0:**  Added VDA model
-- **v3.0:** Added Inpaint mode and Depth AA mode, Optimization and bug fixes
+- **v3.0:** Added Fast Inpaint mode and Depth AA mode, Optimization and bug fixes
 - **v3.1:** Added Distill-Any-Depth, Fix conversion error with the latest FFmpeg build in Conversion3D.
+- **v3.2:** Live3D Added mouse cursor toggle, dubois-anaglyph & output screen calibration to Live3D, added Light, Medium Inpaint & dubois-anaglyph to Conversion3D.
 
 ## Requirements
 
@@ -229,7 +230,7 @@ Select Converted 3D to convert video files, or Live 3D to convert your computer 
 - **Preserve Screen Border** — When enabled, protects the edges of the screen. Recommended when using a high 3D Strength value.
 - **Depth Models** - You can choose from three depth models: Zipdepth, Distill-Any-Depth, and VDA. Zipdepth is lightweight and fast, while VDA is heavier but offers superior temporal consistency. Distill-Any-Depth serves as a well-balanced middle ground.
 - **Depth Resolution** — Adjusts the resolution of the depth map. Higher resolution improves 3D quality but reduces frame rate.
-- **Method** — You can choose between Normal and FAST Inpaint. The Normal method provides fast conversion, while FAST Inpaint is slower but enhances 3D video quality.
+- **Method** — Choose between Normal and FAST Inpaint. The Normal method provides standard, fast conversion, while FAST Inpaint (including Light Inpaint / Stream) is slower but delivers higher 3D video quality.
 - **Depth AA** — Applies anti-aliasing to the depth map to smooth out its edges. Recommended when using the VDA model.
 - **FPS Display** — Displays the current average conversion FPS on screen.
 - **Full SBS Screen Size** — Designed for AR glass users. Adjusts the screen size when outputting in Full SBS (fsbs).
@@ -238,6 +239,8 @@ Select Converted 3D to convert video files, or Live 3D to convert your computer 
 - **Letterbox Remove Toggle** — Automatically detects and removes letterboxing. This removes artifacts that can appear above and below the letterbox bars in letterboxed videos. Quest users can toggle this via controller input; other headsets must assign a keyboard shortcut. Make sure to turn this OFF when you're done, to prevent malfunctions.
 - **Mouse Cursor** — Adjust the size and color of the mouse cursor used for controller input.
   - **Auto Hide** — When enabled, the mouse cursor is automatically hidden during video playback.
+  - **Show Cursor** — Hides the in-app mouse cursor if a duplicate cursor appears in Virtual Desktop.
+- **Color Correction** — Adjusts output colors, excluding OpenXR and Anaglyph modes. Useful for brightening the image, as 3D monitors tend to reduce screen brightness.
 - **Reset Settings** — Restores all settings to their default values.
 - **Start 3D Conversion / Stop** — Starts or stops the program. You can also hold the `ESC` key for 2 seconds to exit the program.
 
@@ -321,8 +324,11 @@ Setup Preparation: If you lack physical monitors, add a second display using a v
 Configuration: Set your Windows display settings to Extend, then select different monitors for input and output in the program. (e.g., Input: Monitor 0 / Output: Monitor 1)<br>
 Important: Do not assign the same monitor to both input and output.
 
-**Q: A black line appears on the screen in Inpaint mode.**<br>
+**Q: A black line appears on the screen in Fast Inpaint mode.**<br>
 A: Disabling the 'Screen Border Protection' option will resolve the issue.
+
+**Q: What is the difference between Light Inpaint and Light Inpaint Stream methods?**<br>
+A: Light Inpaint uses a video-specific neural network model, whereas Light Inpaint Stream utilizes an image-based neural network model for real-time 3D conversion. Since the video-specific model offers superior conversion quality, we recommend choosing Light Inpaint when converting video files.
 
 ---
 
