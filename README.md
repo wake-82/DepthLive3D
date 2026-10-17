@@ -356,6 +356,7 @@ Built with the help of:
 - [pywin32](https://github.com/mhammond/pywin32) — PSF License
 - [winsdk](https://github.com/pywinrt/python-winsdk) — MIT License
 - [psutil](https://github.com/giampaolo/psutil) — BSD-3-Clause License
+- [triton-windows](https://github.com/woct0rdho/triton-windows) — MIT License
 - [FFmpeg](https://ffmpeg.org/) — invoked as an external executable;<br>
   builds fetched from https://github.com/BtbN/FFmpeg-Builds are licensed GPL v3
 
