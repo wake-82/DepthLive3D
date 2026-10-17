@@ -352,6 +352,7 @@ A: 라이트 인페인트는 영상 전용 신경망 모델을 사용하는 반�
 - [pywin32](https://github.com/mhammond/pywin32) — PSF 라이선스
 - [winsdk](https://github.com/pywinrt/python-winsdk) — MIT 라이선스
 - [psutil](https://github.com/giampaolo/psutil) — BSD-3-Clause 라이선스
+- [triton-windows](https://github.com/woct0rdho/triton-windows) — MIT 라이선스
 - [FFmpeg](https://ffmpeg.org/) — 외부 실행 파일로 호출됨;<br>
   https://github.com/BtbN/FFmpeg-Builds 에서 제공되는 빌드는 GPL v3 라이선스 적용
 
