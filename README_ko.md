@@ -40,12 +40,27 @@ https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=ms
 2. Releases 페이지에서 DepthLive3D 설치 파일을 다운로드한 후 C:\DepthLive3D에 압축을 해제합니다. 
 https://github.com/wake-82/DepthLive3D/releases/tag/VR
 
-3. `install.bat`을 실행합니다. 
+3. `DepthLive3D-Install.bat`을 실행합니다. 
 
 4. 설치가 완료되면 DepthLive3D-Run.bat 파일을 실행합니다.
 
 5. 비디오 파일을 변환하려면 Converted 3D를, 컴퓨터 화면을 실시간으로 3D로 변환하려면 Live 3D를 선택합니다.
 
+---
+
+## torch_compile 설치 방법 (선택사항)
+
+이 설치는 필수가 아닙니다. torch_compile을 활성화하고 싶은 분만 아래 단계를 적용하세요.
+
+1. `enable_long_path.reg` 레지스트리 파일을 적용하세요. Windows의 긴 경로 지원을 켜기 위해 필요합니다. 적용이 끝나면 컴퓨터를 재부팅하세요.
+2. `install_torch_compile.bat`을 실행하세요. torch_compile 활성화에 필요한 파일이 자동으로 설치됩니다.
+3. DepthLive3D 옵션에서 torch_compile 옵션을 켜 보세요. 처음 실행할 때는 대기 시간이 길지만, 변환이 시작되면 이전보다 변환 속도가 빨라집니다.
+
+※ 참고사항
+Live3D에서 torch_compile을 켠 상태로 VDA 모델을 선택하고 변환을 시작하면, 변환이 시작된 뒤에도 짧게는 몇 초, 길게는 몇 분까지 화면이 멈춘 것처럼 보일 수 있습니다.
+이는 프로그램이 다운되거나 멈춘 것이 아니라, torch_compile이 활성화되는 단계에서 생기는 지연 시간입니다.
+인내심을 가지고 기다리면 정상적으로 변환되는 것을 확인하실 수 있습니다.
+기다릴 수 없다면 ESC 키를 2초간 눌러 프로그램을 강제로 중단하세요.
 
 ---
 
