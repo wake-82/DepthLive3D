@@ -237,6 +237,8 @@ Select Converted 3D to convert video files, or Live 3D to convert your computer 
 - **CPU Performance** — Selects how many CPU cores to use. Setting this to "High" does not always improve performance — try each mode to find the best setting for your system.
 - **Low VRAM Mode** — Enable this option if the VR screen freezes or the background flickers due to insufficient GPU VRAM. Note that enabling this will reduce the frame rate. 
 <br>Additionally, since this mode uses only the most recent frame, it offers the fastest screen response time. Therefore, if game responsiveness is important to you, enabling this mode can be advantageous. 
+- **torch.compile** — Enabling this option speeds up inference for the depth map and inpaint models, which improves conversion speed. To use it, you must install torch.compile support separately.
+※ Note: Fast Inpaint does not use an AI model, so enabling this option will not make Fast Inpaint any faster.
 - **Auto Mode** — When enabled, Edge Fix and Flicker Reduction are automatically set to optimal values based on the 3D Strength value.
 - **3D Format** — Enabled in PC mode. Select the 3D output format that matches your device.
 - **3D Strength** — Adjusts the strength of the 3D effect. Higher strength increases artifacts and depth map flickering. You can adjust this in real time using the `[` and `]` keys.
