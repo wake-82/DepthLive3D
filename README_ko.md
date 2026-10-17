@@ -208,7 +208,7 @@ python DepthLive3D.py
 ---
 
 ## Live 3D 옵션
-
+![preview](./live3d_preview.png)
 - **Mode** — OpenXR, PC, 듀얼 모니터 3D 출력 모드 중 선택합니다.<br> VR 기기는 OpenXR을, 3D TV, AR 글래스, 일반 모니터는 PC 또는 듀얼 모니터 3D 출력 모드를 선택합니다.<br> 듀얼 모니터 3D 출력 모드는 외부 모니터 또는 가상 모니터가 필요합니다.
 - **Process Size** — 캡처 해상도를 설정합니다. 720p 또는 1080p를 권장합니다.
 - **Target FPS** — 캡처 프레임 레이트를 설정합니다. 30 또는 60 중 선택할 수 있습니다. 프레임 레이트가 불안정한 경우 30으로 전환해 보세요.
@@ -246,7 +246,7 @@ python DepthLive3D.py
 ---
 
 ## Conversion 3D 옵션
-
+![preview](./conversion3d_preview.png)
 - **Input File** — 비디오 파일을 선택합니다. 폴더를 선택하면 폴더 내 모든 비디오를 순서대로 변환합니다.
 - **Depthmap Input File** — 원본 비디오와 뎁스맵 비디오를 함께 선택하면 뎁스맵 생성 과정을 건너뛰고 즉시 변환을 시작합니다.
 - **Output Folder** — 변환된 파일을 저장할 대상 폴더를 선택합니다.
