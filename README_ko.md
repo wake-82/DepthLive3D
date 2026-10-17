@@ -227,7 +227,7 @@ python DepthLive3D.py
 - **Preserve Screen Border** — 활성화하면 화면 가장자리를 보호합니다. 3D Strength 값이 높을 때 권장합니다.
 - **Depth Models** - Zipdepth, Distill-Any-Depth, VDA 가운데 선택할 수 있습니다. Zipdepth는 가볍고 빠르며, VDA는 속도는 느리지만 시간적 일관성이 뛰어납니다. Distill-Any-Depth는 두 모델의 균형을 맞춘 밸런스형 모델입니다.
 - **Depth Resolution** — 깊이 맵의 해상도를 조정합니다. 해상도가 높을수록 3D 품질이 향상되지만 프레임 레이트가 감소합니다.
-- **Method** — Normal 모드와 인페인트 모드 중에서 선택할 수 있습니다. Normal 모드는 빠른 변환을 제공하며, 인페인트(Fast, 라이트, 미디움) 방식은 속도는 더 느리지만 더 뛰어난 3D 품질을 제공합니다.
+- **Method** — Normal과 Inpaint 중 선택합니다. Normal 모드는 표준적인 빠른 변환을 제공하는 반면, Fast Inpaint 및 Light Inpaint Stream 방식은 더 느리지만 더 높은 품질의 3D 변환 품질을 제공합니다. (영상 모델 Light / Medium Inpaint는 Conversion 3D에서만 사용할 수 있습니다.)
 - **Depth AA** — 깊이 맵에 안티앨리어싱을 적용하여 가장자리를 부드럽게 합니다. VDA 모델 사용 시 권장합니다.
 - **FPS Display** — 현재 평균 변환 FPS를 화면에 표시합니다.
 - **Full SBS Screen Size** — AR 글래스 사용자를 위한 옵션입니다. Full SBS(fsbs) 출력 시 화면 크기를 조정합니다.
