@@ -49,6 +49,22 @@ https://github.com/wake-82/DepthLive3D/releases/tag/VR
 
 5. Select Converted 3D to convert video files, or Live 3D to convert your computer screen to 3D in real time.
 
+---
+
+## How to install torch_compile (Optional)
+
+This is not a required component. Apply the steps below only if you want to enable torch_compile.
+
+1. Apply the `enable_long_path.reg` registry file. It is required to turn on long path support in Windows. Once it has been applied, restart your computer.
+2. Run `install_torch_compile.bat`. It automatically installs the files needed to enable torch_compile.
+3. Turn on the torch_compile option in DepthLive3D. The first run takes a long time to start, but once the conversion begins, it runs faster than before.
+
+※ Note
+When you start a conversion in Live3D with torch_compile turned on and a VDA model selected, the screen may appear frozen for anywhere from a few seconds to several minutes, even after the conversion has begun.
+This does not mean the program has crashed or stopped responding.
+It is a delay that occurs while torch_compile is being activated.
+If you wait patiently, you will see the conversion proceed normally.
+If you cannot wait, hold the ESC key for 2 seconds to force the program to stop.
 
 ---
 
