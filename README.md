@@ -43,7 +43,7 @@ https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=ms
 2. Download the DepthLive3D installation files from the Releases page and extract them to C:\DepthLive3D. 
 https://github.com/wake-82/DepthLive3D/releases/tag/VR
 
-3. Run `install.bat`. 
+3. Run `DepthLive3D-Install.bat`. 
 
 4. Once the installation is complete, run the DepthLive3D-Run.bat file.
 
