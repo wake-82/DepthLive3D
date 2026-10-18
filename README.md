@@ -347,6 +347,9 @@ A: Disabling the 'Screen Border Protection' option will resolve the issue.
 **Q: What is the difference between Light Inpaint and Light Inpaint Stream methods?**<br>
 A: Light Inpaint uses a video-specific neural network model, whereas Light Inpaint Stream utilizes an image-based neural network model for real-time 3D conversion. Since the video-specific model offers superior conversion quality, we recommend choosing Light Inpaint when converting video files.
 
+**Q. When torch.compile is enabled and I turn on letterbox removal, the screen appears to freeze.**<br>
+A. It is not frozen. The depth model’s input size has changed, so torch.compile is recompiling for the new size. Removing the letterbox crops the frame and changes the input size, and depending on the model, compilation takes about 1–2 minutes. Once it finishes, the video resumes automatically. If the screen is still frozen after several minutes, turn letterbox removal off again and wait a moment; the video will resume playing.
+
 ---
 
 ## Credits (Acknowledgements)
