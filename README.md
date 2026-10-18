@@ -348,6 +348,9 @@ A: Disabling the 'Screen Border Protection' option will resolve the issue.
 **Q: What is the difference between Light Inpaint and Light Inpaint Stream methods?**<br>
 A: Light Inpaint uses a video-specific neural network model, whereas Light Inpaint Stream utilizes an image-based neural network model for real-time 3D conversion. Since the video-specific model offers superior conversion quality, we recommend choosing Light Inpaint when converting video files.
 
+**Q: I aborted the process while preparing for the torch.compile conversion. Since then, the conversion no longer starts and throws an error.**<br>
+A: Please close the program and run install_torch_compile.bat to reinstall torch.compile. This should resolve the issue.
+
 ---
 
 ## Credits (Acknowledgements)
