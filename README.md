@@ -18,7 +18,7 @@ DepthLive3D is a free program that uses AI-based depth mapping and OpenXR techno
 - **v2.0:**  Added VDA model
 - **v3.0:** Added Fast Inpaint mode and Depth AA mode, Optimization and bug fixes
 - **v3.1:** Added Distill-Any-Depth, Fix conversion error with the latest FFmpeg build in Conversion3D.
-- **v3.2:** Live3D Added mouse cursor toggle, dubois-anaglyph & output screen calibration to Live3D, added Light, Medium Inpaint & dubois-anaglyph to Conversion3D.
+- **v3.2:** Live3D Added mouse cursor toggle, Light Inpaint Stream, dubois-anaglyph & output screen calibration to Live3D, added Light, Medium Inpaint & dubois-anaglyph to Conversion3D.
 
 ## Requirements
 
