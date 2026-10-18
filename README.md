@@ -45,7 +45,7 @@ https://github.com/wake-82/DepthLive3D/releases/tag/VR
 
 3. Run `DepthLive3D-Install.bat`. 
 
-4. Once the installation is complete, run the DepthLive3D-Run.bat file.
+4. Once the installation is complete, run the `Run.bat` file.
 
 5. Select Converted 3D to convert video files, or Live 3D to convert your computer screen to 3D in real time.
 
