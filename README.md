@@ -64,7 +64,6 @@ When you start a conversion in Live3D with torch_compile turned on and a VDA mod
 This does not mean the program has crashed or stopped responding.
 It is a delay that occurs while torch_compile is being activated.
 If you wait patiently, you will see the conversion proceed normally.
-If you cannot wait, hold the ESC key for 2 seconds to force the program to stop.
 
 ---
 
