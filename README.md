@@ -407,4 +407,4 @@ License: https://creativecommons.org/licenses/by/3.0/
 Demo video has been converted from 2D to 3D using DepthLive3D.
 
 ## Next update
-
+The next update will include the Medium Inpaint Stream model.
