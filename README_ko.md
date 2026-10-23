@@ -402,4 +402,4 @@ License: https://creativecommons.org/licenses/by/3.0/
 본 데모 영상은 DepthLive3D를 사용하여 2D에서 3D로 변환되었습니다.
 
 ## 다음 업데이트
-
+다음 업데이트 미디움 인페인트 스트림 모델이 추가될 예정입니다.
