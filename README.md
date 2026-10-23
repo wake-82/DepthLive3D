@@ -20,6 +20,7 @@ DepthLive3D is a free program that uses AI-based depth mapping and OpenXR techno
 - **v3.1:** Added Distill-Any-Depth, Fix conversion error with the latest FFmpeg build in Conversion3D.
 - **v3.2:** Live3D Added mouse cursor toggle, Light Inpaint Stream, dubois-anaglyph & output screen calibration to Live3D, added Light, Medium Inpaint & dubois-anaglyph to Conversion3D.
 - **3.2.1:** Added torch.compile support and fixed an issue where ZipDepth conversion failed on non-16:9 videos when torch.compile was enabled.
+- **3.3:** Added Medium Inpaint Stream
 
 ## Requirements
 
@@ -407,4 +408,4 @@ License: https://creativecommons.org/licenses/by/3.0/
 Demo video has been converted from 2D to 3D using DepthLive3D.
 
 ## Next update
-The next update will include the Medium Inpaint Stream model.
+
