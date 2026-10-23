@@ -17,6 +17,7 @@ DepthLive3D는 AI 기반 깊이 매핑과 OpenXR 기술을 활용하여 PC 화�
 - **v3.1:** Distill-Any-Depth 모델 추가, Conversion3D에서 최신 FFmpeg 빌드 사용 시 변환 오류가 발생하던 문제를 수정했습니다.
 - **v3.2:** Live3D에 마우스 커서 토글, Dubois 아나글리프 및 출력 화면 보정 기능이 추가되었습니다. Conversion3D에는 라이트 인페인트, 미디움 인페인트, Dubois 아나글리프 기능이 추가되었습니다.
 - **3.2.1:** torch.compile 기능을 추가했으며, torch.compile이 켜진 상태에서 16:9 비율이 아닌 영상을 변환할 때 오류가 발생하는 문제를 수정했습니다.
+- **3.3:** 미디움 인페인트 스트림 추가
 
 ## 요구 사항
 
@@ -402,4 +403,4 @@ License: https://creativecommons.org/licenses/by/3.0/
 본 데모 영상은 DepthLive3D를 사용하여 2D에서 3D로 변환되었습니다.
 
 ## 다음 업데이트
-다음 업데이트 미디움 인페인트 스트림 모델이 추가될 예정입니다.
+
