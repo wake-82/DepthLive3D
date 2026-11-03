@@ -4059,8 +4059,8 @@ LIGHT_INPAINT_STREAM_INNER_DILATION = 1
 LIGHT_INPAINT_STREAM_OUTER_DILATION = 2
 
 # Light Inpaint (stream) temporal stabilisation (the model is an IMAGE model: every call hallucinates a different texture)
-LIGHT_INPAINT_STREAM_CACHE_MAX_INTERVAL = 16     # force a model re-run at least every N frames
-LIGHT_INPAINT_STREAM_CACHE_CHANGE_THRESH = 0.25 # re-run when this fraction of the hole area is newly uncovered
+LIGHT_INPAINT_STREAM_CACHE_MAX_INTERVAL = 8     # force a model re-run at least every N frames
+LIGHT_INPAINT_STREAM_CACHE_CHANGE_THRESH = 0.05 # re-run when this fraction of the hole area is newly uncovered
 LIGHT_INPAINT_STREAM_HOLD_FRAMES = 1            # mask hysteresis: a pixel stays "inpainted" for N frames after it leaves the hole (0 = off)
 LIGHT_INPAINT_STREAM_FADE_FRAMES = 1            # on a model refresh, cross-fade old -> new hole texture over N frames (1 = hard switch)
 
