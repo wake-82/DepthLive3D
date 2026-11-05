@@ -251,7 +251,7 @@ Select Converted 3D to convert video files, or Live 3D to convert your computer 
 - **Depth Resolution** — Adjusts the resolution of the depth map. Higher resolution improves 3D quality but reduces frame rate.
 - **Method** — Choose between Normal and Inpaint. The Normal method provides standard, fast conversion, while Fast Inpaint, Light Inpaint Stream is slower but delivers higher 3D video quality. (Video-model Light / Medium Inpaint are available in Conversion 3D only.)
 - **Depth AA** — Applies anti-aliasing to the depth map to smooth out its edges. Recommended when using the VDA model.
-- **Depth Linear Compression** — Compresses the depth range to reduce inpaint holes (band artifacts) at foreground, background edges. Tuned for Light Inpaint (stream); VDA-S and Distill-Any-S only.
+- **Depth Linear Compression** — Compresses the depth range to reduce inpaint holes (band artifacts) at foreground and background edges. Tuned for Light Inpaint (stream); VDA-S and Distill-Any-S only.
 - **FPS Display** — Displays the current average conversion FPS on screen.
 - **Full SBS Screen Size** — Designed for AR glass users. Adjusts the screen size when outputting in Full SBS (fsbs).
 - **VR Screen Options** — Configure screen size, height, distance, center position, background and screen reset.
