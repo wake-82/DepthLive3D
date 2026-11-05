@@ -17,7 +17,7 @@ DepthLive3D는 AI 기반 깊이 매핑과 OpenXR 기술을 활용하여 PC 화�
 - **v3.1:** Distill-Any-Depth 모델 추가, Conversion3D에서 최신 FFmpeg 빌드 사용 시 변환 오류가 발생하던 문제를 수정했습니다.
 - **v3.2:** Live3D에 마우스 커서 토글, Dubois 아나글리프 및 출력 화면 보정 기능이 추가되었습니다. Conversion3D에는 라이트 인페인트, 미디움 인페인트, Dubois 아나글리프 기능이 추가되었습니다.
 - **3.2.1:** torch.compile 기능을 추가했으며, torch.compile이 켜진 상태에서 16:9 비율이 아닌 영상을 변환할 때 오류가 발생하는 문제를 수정했습니다.
-- **3.2.2:** Light Inpaint Stream의 잔상 발생 문제를 수정했습니다. 
+- **3.2.2:** 뎁스 선형 압축 옵션을 추가하고, Light Inpaint Stream의 잔상 발생 문제를 수정했습니다. 
 
 ## 요구 사항
 
@@ -247,6 +247,7 @@ python DepthLive3D.py
 - **Depth Resolution** — 깊이 맵의 해상도를 조정합니다. 해상도가 높을수록 3D 품질이 향상되지만 프레임 레이트가 감소합니다.
 - **Method** — Normal과 Inpaint 중 선택합니다. Normal 모드는 표준적인 빠른 변환을 제공하는 반면, Fast Inpaint 및 Light Inpaint Stream 방식은 더 느리지만 더 높은 3D 품질의 제공합니다. (비디오 모델인 Light와 Medium Inpaint는 Conversion 3D에서만 사용할 수 있습니다.)
 - **Depth AA** — 깊이 맵에 안티앨리어싱을 적용하여 가장자리를 부드럽게 합니다. VDA 모델 사용 시 권장합니다.
+- **Depth Linear Compression** — 뎁스 범위를 압축해 전경과 배경 경계의 인페인트 홀(띠 아티팩트)을 줄입니다. 라이트 인페인트 스트림 용이며 VDA-S, Distill-Any-S 모델에서만 작동합니다.
 - **FPS Display** — 현재 평균 변환 FPS를 화면에 표시합니다.
 - **Full SBS Screen Size** — AR 글래스 사용자를 위한 옵션입니다. Full SBS(fsbs) 출력 시 화면 크기를 조정합니다.
 - **VR Screen Options** — 화면 크기, 높이, 거리, 중앙 위치, 배경 및 화면 초기화를 설정합니다.
