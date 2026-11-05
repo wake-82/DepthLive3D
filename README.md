@@ -20,7 +20,7 @@ DepthLive3D is a free program that uses AI-based depth mapping and OpenXR techno
 - **v3.1:** Added Distill-Any-Depth, Fix conversion error with the latest FFmpeg build in Conversion3D.
 - **v3.2:** Live3D Added mouse cursor toggle, Light Inpaint Stream, dubois-anaglyph & output screen calibration to Live3D, added Light, Medium Inpaint & dubois-anaglyph to Conversion3D.
 - **3.2.1:** Added torch.compile support and fixed an issue where ZipDepth conversion failed on non-16:9 videos when torch.compile was enabled.
-- **3.2.2:** Fixed the ghosting issue in the Light Inpaint Stream.
+- **3.2.2:** Added the Depth Linear Compression option, fixed the ghosting issue in the Light Inpaint Stream.
 
 ## Requirements
 
@@ -251,6 +251,7 @@ Select Converted 3D to convert video files, or Live 3D to convert your computer 
 - **Depth Resolution** — Adjusts the resolution of the depth map. Higher resolution improves 3D quality but reduces frame rate.
 - **Method** — Choose between Normal and Inpaint. The Normal method provides standard, fast conversion, while Fast Inpaint, Light Inpaint Stream is slower but delivers higher 3D video quality. (Video-model Light / Medium Inpaint are available in Conversion 3D only.)
 - **Depth AA** — Applies anti-aliasing to the depth map to smooth out its edges. Recommended when using the VDA model.
+- **Depth Linear Compression** — Compresses the depth range to reduce inpaint holes (band artifacts) at foreground/background edges. Tuned for Light Inpaint (stream); VDA-S and Distill-Any-S only.
 - **FPS Display** — Displays the current average conversion FPS on screen.
 - **Full SBS Screen Size** — Designed for AR glass users. Adjusts the screen size when outputting in Full SBS (fsbs).
 - **VR Screen Options** — Configure screen size, height, distance, center position, background and screen reset.
