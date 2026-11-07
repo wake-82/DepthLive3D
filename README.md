@@ -13,9 +13,6 @@ DepthLive3D is a free program that uses AI-based depth mapping and OpenXR techno
 [Big Buck Bunny](https://youtu.be/GoZfcv_eMXA)
 - 2D Source 720p, VDA-S Stream, Depth Resolution 630, 3D Strength 2.0, Convergence 0.5, Auto Mode, Fast Inpaint
 
-[Camel Demo](camel_stereo_demo.webp)
-- VDA-S, Depth Resolution 630, 3D Strength 3.0, Convergence 0.5, Edge Fix 1, Flicker Reduction OFF, Depth AA OFF, Depth Linear Compression ON, Medium Inpaint, Auto Mode OFF (Conversion 3D Only)
-
 ## Updates
 - **v1.0:** Initial release
 - **v2.0:**  Added VDA model
