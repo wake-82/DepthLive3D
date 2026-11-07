@@ -10,6 +10,9 @@ DepthLive3D는 AI 기반 깊이 매핑과 OpenXR 기술을 활용하여 PC 화�
 [Big Buck Bunny](https://youtu.be/GoZfcv_eMXA)
 - 2D Source 720p, VDA-S Stream, Depth Resolution 630, Stereo Strength 2.0, Convergence 0.5, Auto Mode, Fast Inpaint]
 
+[Camel Demo](camel_stereo_demo.webp)
+- VDA-S, Depth Resolution 630, 3D Strength 3.0, Convergence 0.5, Edge Fix 1, Flicker Reduction OFF, Depth AA OFF, Depth Linear Compression ON, Medium Inpaint, Auto Mode OFF (Conversion 3D Only)
+
 ## 업데이트 내역
 - **v1.0:** 최초 배포
 - **v2.0:**  VDA 모델 추가
