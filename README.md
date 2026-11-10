@@ -387,6 +387,9 @@ Built with the help of:
 - [triton-windows](https://github.com/woct0rdho/triton-windows) — MIT License
 - [FFmpeg](https://ffmpeg.org/) — invoked as an external executable;<br>
   builds fetched from https://github.com/BtbN/FFmpeg-Builds are licensed GPL v3
+- [NVIDIA TensorRT](https://developer.nvidia.com/tensorrt) — Proprietary License (NVIDIA Software License Agreement)<br>
+  Optional acceleration component. Installing `tensorrt_cu12` via the installer accepts the NVIDIA TensorRT license.<br>
+  License: https://docs.nvidia.com/deeplearning/tensorrt/latest/reference/sla.html
 
 Full license texts for each third-party library are included in the THIRD_PARTY_LICENSES/ folder.
 
