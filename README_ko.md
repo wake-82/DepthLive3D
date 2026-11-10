@@ -408,4 +408,4 @@ License: https://creativecommons.org/licenses/by/3.0/
 본 데모 영상은 DepthLive3D를 사용하여 2D에서 3D로 변환되었습니다.
 
 ## 다음 업데이트
-
+TensorRT를 구현하고, 인페인트 해상도 조정 옵션을 추가하며, 사용 중 발생하는 불편 사항들을 수정할 예정입니다.
