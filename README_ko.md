@@ -381,6 +381,9 @@ A. 멈춘 것이 아니라, 뎁스 모델의 입력 크기가 바뀌어 torch.co
 - [triton-windows](https://github.com/woct0rdho/triton-windows) — MIT 라이선스
 - [FFmpeg](https://ffmpeg.org/) — 외부 실행 파일로 호출됨;<br>
   https://github.com/BtbN/FFmpeg-Builds 에서 제공되는 빌드는 GPL v3 라이선스 적용
+- [NVIDIA TensorRT](https://developer.nvidia.com/tensorrt) — 독점 라이선스 (NVIDIA Software License Agreement)<br>
+  선택적 가속 컴포넌트입니다. 설치 프로그램으로 `tensorrt_cu12`를 설치하면 NVIDIA TensorRT 라이선스에 동의한 것으로 간주됩니다.<br>
+  라이선스: https://docs.nvidia.com/deeplearning/tensorrt/latest/reference/sla.html
 
 각 서드파티 라이브러리의 전체 라이선스 텍스트는 THIRD_PARTY_LICENSES/ 폴더에 포함되어 있습니다.
 
