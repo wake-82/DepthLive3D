@@ -414,4 +414,4 @@ License: https://creativecommons.org/licenses/by/3.0/
 Demo video has been converted from 2D to 3D using DepthLive3D.
 
 ## Next update
-
+We are going to implement TensorRT, add inpaint resolution adjustment options, and fix inconvenience issues encountered during usage.
