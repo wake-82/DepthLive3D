@@ -362,6 +362,7 @@ A. 멈춘 것이 아니라, 뎁스 모델의 입력 크기가 바뀌어 torch.co
 이 프로젝트는 [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2)의 소스 코드를 사용합니다.  (Apache 2.0 라이선스, Copyright 2024 Depth Anything Authors)<br>
 이 프로젝트는 [Video-Depth-Anything](https://github.com/DepthAnything/Video-Depth-Anything)의 소스 코드를 사용합니다. (Apache 2.0 라이선스, Copyright 2025 ByteDance)<br>
 이 프로젝트는 [iw3-inpaint](https://github.com/Rowan3D/iw3-inpaint)의 소스 코드를 사용합니다. (MIT License).<br>
+이 프로젝트는 [iw3-lowres](https://github.com/Rowan3D/iw3-lowres)의 소스 코드를 사용합니다. (MIT License).<br>
 
 전체 라이선스 텍스트는 `THIRD_PARTY_LICENSES/`를 참조하세요.
 
