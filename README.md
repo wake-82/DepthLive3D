@@ -59,36 +59,29 @@ DepthLive3D is a free program that uses AI-based depth mapping and OpenXR techno
 - **VR headset (optional):** OpenXR-compatible headset, if using VR output
   
 ---
-
 ## DepthLive3D Windows 10 & 11 Quick Installation Guide
 
 1. Install the Microsoft Visual C++ Redistributable x64 package first (vc_redist.x64.exe):
 https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
 
-2. Download the DepthLive3D installation files from the Releases page and extract them to C:\DepthLive3D. 
+2. Download the DepthLive3D installation files from the Releases page and extract them to C:\DepthLive3D.
 https://github.com/wake-82/DepthLive3D/releases/tag/VR
 
-3. Run `DepthLive3D-Install.bat`. 
+3. Apply the `enable_long_path.reg` registry file, then restart your computer.
+   Long path support in Windows is required to enable torch.compile and TensorRT and to use them reliably.
 
-4. Once the installation is complete, run the `Run.bat` file.
+4. Run `DepthLive3D-Install.bat`.
 
-5. Select Converted 3D to convert video files, or Live 3D to convert your computer screen to 3D in real time.
+5. Once the installation is complete, run the `Run.bat` file.
 
----
-
-## How to install torch_compile (Optional)
-
-This is not a required component. Apply the steps below only if you want to enable torch_compile.
-
-1. Apply the `enable_long_path.reg` registry file. It is required to turn on long path support in Windows. Once it has been applied, restart your computer.
-2. Run `install_torch_compile.bat`. It automatically installs the files needed to enable torch_compile.
-3. Turn on the torch_compile option in DepthLive3D. The first run takes a long time to start, but once the conversion begins, it runs faster than before.
+6. Select Converted 3D to convert video files, or Live 3D to convert your computer screen to 3D in real time.
 
 ※ Note
-When you start a conversion in Live3D with torch_compile turned on and a VDA model selected, the screen may appear frozen for anywhere from a few seconds to several minutes, even after the conversion has begun.
-This does not mean the program has crashed or stopped responding.
-It is a delay that occurs while torch_compile is being activated.
-If you wait patiently, you will see the conversion proceed normally.
+When torch.compile or TensorRT is turned on, the conversion may not start right away after you press start.
+The program is creating an optimized cache file for your model and input size, which can take anywhere from a few seconds to several minutes. Once it is finished, the conversion starts automatically.
+This does not mean the program has crashed or stopped responding. Please wait until it completes.
+The cache is created before OpenXR mode is entered, so the headset no longer shows a black screen during this process.
+The cache is reused afterwards, so later runs start much faster. (A new cache is created when the input size changes, for example when letterbox removal is toggled.)
 
 ---
 
