@@ -21,7 +21,7 @@ DepthLive3D는 AI 기반 뎁스맵과 OpenXR 기술을 사용하여 PC 화면을
 
 **■ 일반**
 
-* TensorRT 지원 구현 및 통합 ※ 참고: VDA 모델은 torch.compile과 TensorRT 모두 활성화해야 최고 변환 속도로 작동합니다. 
+* TensorRT 지원 구현 및 통합 ※ 참고: VDA 모델은 torch.compile과 TensorRT 모두 활성화해야 최대 변환 속도로 작동합니다. 
 * Depth Anything V2 Small 모델 추가
 * 인페인트 해상도 조절 옵션 추가
 * 프리셋 설정 범위 업데이트
