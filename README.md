@@ -79,7 +79,10 @@ https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitat
 7. Select Converted 3D to convert video files, or Live 3D to convert your computer screen to 3D in real time.
 
 ※ Note
-When torch.compile or TensorRT is turned on, the conversion may not start right away after you press start.
+1. If TensorRT or torch.compile fails to install or is disabled, try running install_tensorrt.bat or install_torch_compile.bat to reinstall them.
+(Note: TensorRT is not supported on GTX 10-series graphics cards, so it is normal for it to remain disabled on those GPUs.)
+
+2. When torch.compile or TensorRT is turned on, the conversion may not start right away after you press start.
 The program is creating an optimized cache file for your model and input size, which can take anywhere from a few seconds to several minutes. Once it is finished, the conversion starts automatically.
 This does not mean the program has crashed or stopped responding. Please wait until it completes.
 The cache is reused afterwards, so later runs start much faster. (A new cache is created when the input size changes, for example when letterbox removal is toggled.)
