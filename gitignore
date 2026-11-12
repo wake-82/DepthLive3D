@@ -18,11 +18,16 @@ ENV/
 env.bak/
 venv.bak/
 
+# --- Portable runtime (created by DepthLive3D-Install.bat, normally outside the repo folder) ---
+python-embed/
+git-portable/
+
 # --- PyTorch / ML models & checkpoints ---
 *.pt
 *.pth
 *.ckpt
 *.onnx
+*.onnx.data
 *.safetensors
 *.bin
 *.pkl
@@ -31,6 +36,23 @@ checkpoints/
 weights/
 models/
 *.cache/
+
+# --- Dependencies cloned by DepthLive3D-Install.bat (separate git repos, not part of this repo) ---
+ZipDepth/
+Video-Depth-Anything/
+Depth-Anything-V2/
+
+# --- TensorRT (installed separately by the release install script; engines are built locally) ---
+# Engines are tied to the GPU, TensorRT version and input shape, so they are never shared.
+trt_cache/
+*.trt
+*.engine
+*.plan
+
+# --- torch.compile caches (Inductor / Triton; default location is outside the repo, listed in case it is redirected here) ---
+torchinductor_*/
+.triton/
+compile_cache/
 
 # --- CUDA / GPU logs ---
 *.nvvp
@@ -55,6 +77,15 @@ logs/
 output/
 outputs/
 runs/
+
+# --- User settings & presets generated at runtime (per-user, not part of the source) ---
+depthlive3d_config.json
+DepthConversion3D_config.json
+DepthConversion3D.json
+live3d_gui_config.json
+live3d_presets.json
+live3d_display_restore.json
+build_time_history.json
 
 # --- Screen capture buffers / frames ---
 capture/
