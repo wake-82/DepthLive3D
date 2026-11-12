@@ -34,16 +34,17 @@ DepthLive3D is a free program that uses AI-based depth mapping and OpenXR techno
 
 **■ Conversion 3D**
 
-* Added a scheduled PC shutdown feature after conversion completes
+* Added the Schedule PC Shutdown After Conversion option.
 * Added a reset settings button
 
 **■ Live 3D**
 
-* Added presets and a depth map preview feature
-* Fixed color calibration to work properly in OpenXR mode
-* Fixed a black screen issue by pre-initializing Torch Compile and TensorRT before entering OpenXR mode
-* Added a remaining time indicator for screen rebuilding when letterbox removal is enabled alongside Torch Compile and TensorRT
-* Added a shortcut in OpenXR mode to launch the Windows touch keyboard by holding the VR controller trigger and the A (or X) button simultaneously for 2 seconds
+* Added presets and the Depth Map Preview feature
+* Added a shortcut to launch the Windows touch keyboard in OpenXR mode: hold the VR controller trigger and the A (or X) button together for 2 seconds
+* Added a remaining-time indicator while torch.compile or TensorRT rebuilds after letterbox removal is toggled
+* Improved Dual-Monitor 3D Output mode: when Dynamic Resolution Auto Adjust is enabled, both monitors now automatically switch to the output resolution
+* Fixed color calibration not working properly in OpenXR mode
+* Fixed a black screen issue in OpenXR mode by pre-initializing torch.compile and TensorRT before entering it
 
 ## Requirements
 
