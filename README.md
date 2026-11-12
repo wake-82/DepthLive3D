@@ -70,12 +70,13 @@ https://github.com/wake-82/DepthLive3D/releases/tag/VR
 
 3. Apply the `enable_long_path.reg` registry file, then restart your computer.
    Long path support in Windows is required to enable torch.compile and TensorRT and to use them reliably.
+https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry
 
-4. Run `DepthLive3D-Install.bat`.
+5. Run `DepthLive3D-Install.bat`.
 
-5. Once the installation is complete, run the `Run.bat` file.
+6. Once the installation is complete, run the `Run.bat` file.
 
-6. Select Converted 3D to convert video files, or Live 3D to convert your computer screen to 3D in real time.
+7. Select Converted 3D to convert video files, or Live 3D to convert your computer screen to 3D in real time.
 
 ※ Note
 When torch.compile or TensorRT is turned on, the conversion may not start right away after you press start.
