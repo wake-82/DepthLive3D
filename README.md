@@ -21,7 +21,7 @@ DepthLive3D is a free program that uses AI-based depth mapping and OpenXR techno
 
 **■ General**
 
-* Implemented and integrated TensorRT support
+* Implemented and integrated TensorRT support ※ Note: The VDA model achieves maximum conversion speed only when both torch.compile and TensorRT are enabled.
 * Added Depth Anything V2 Small model
 * Added an option to adjust inpaint resolution
 * Updated preset configuration ranges
