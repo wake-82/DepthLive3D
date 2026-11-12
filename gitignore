@@ -54,6 +54,12 @@ torchinductor_*/
 .triton/
 compile_cache/
 
+# --- FFmpeg binaries (downloaded automatically into the program folder on first use) ---
+ffmpeg.exe
+ffprobe.exe
+ffmpeg
+ffprobe
+
 # --- CUDA / GPU logs ---
 *.nvvp
 *.nsys-rep
