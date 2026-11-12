@@ -14,12 +14,6 @@ DepthLive3D는 AI 기반 깊이 매핑과 OpenXR 기술을 활용하여 PC 화�
 - VDA-S, Depth Resolution 630, 3D Strength 3.0, Convergence 0.5, Edge Fix 1, Flicker Reduction OFF, Depth AA OFF, Depth Linear Compression ON, Medium Inpaint (Conversion 3D Only)
 
 ## 업데이트 내역
-- **v1.0:** 최초 배포
-- **v2.0:**  VDA 모델 추가
-- **v3.0:** 인페인트 모드 및 Depth AA 모드 추가, 최적화 및 버그 수정
-- **v3.1:** Distill-Any-Depth 모델 추가, Conversion3D에서 최신 FFmpeg 빌드 사용 시 변환 오류가 발생하던 문제를 수정했습니다.
-- **v3.2:** Live3D에 마우스 커서 토글, Dubois 아나글리프 및 출력 화면 보정 기능이 추가되었습니다. Conversion3D에는 라이트 인페인트, 미디움 인페인트, Dubois 아나글리프 기능이 추가되었습니다.
-- **3.2.1:** torch.compile 기능을 추가했으며, torch.compile이 켜진 상태에서 16:9 비율이 아닌 영상을 변환할 때 오류가 발생하는 문제를 수정했습니다.
 - **3.2.2:** Depth Linear Compression(뎁스 선형 압축 옵션)을 추가하고, Light Inpaint Stream의 잔상 발생 문제를 수정했습니다. 
 
 ## 요구 사항
