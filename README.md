@@ -17,7 +17,7 @@ DepthLive3D is a free program that uses AI-based depth mapping and OpenXR techno
 - VDA-S, Depth Resolution 630, 3D Strength 3.0, Convergence 0.5, Edge Fix 1, Flicker Reduction OFF, Depth AA OFF, Depth Linear Compression ON, Medium Inpaint (Conversion 3D Only)
 
 ## Updates
-**Version 3.3 Upcoming Update**</br>
+**Version 3.3 Update Notes**</br>
 
 **■ General**
 
