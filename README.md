@@ -116,6 +116,7 @@ If you wait patiently, you will see the conversion proceed normally.
 - **Depth Models** - You can choose from three depth models: Zipdepth, Distill-Any-Depth, and VDA. Zipdepth is lightweight and fast, while VDA is heavier but offers superior temporal consistency. Distill-Any-Depth serves as a well-balanced middle ground.
 - **Depth Resolution** — Adjusts the resolution of the depth map. Higher resolution improves 3D quality but reduces frame rate.
 - **Method** — Choose between Normal and Inpaint. The Normal method provides standard, fast conversion, while Fast Inpaint, Light Inpaint Stream is slower but delivers higher 3D video quality. (Video-model Light / Medium Inpaint are available in Conversion 3D only.)
+- **Inpaint Resolution** — Sets the resolution at which the Light Inpaint and Medium Inpaint models run. Lower values are faster, higher values preserve more detail. Not applied to Fast Inpaint.
 - **Depth AA** — Applies anti-aliasing to the depth map to smooth out its edges. Recommended when using the VDA model.
 - **Depth Linear Compression** — Compresses the depth range to reduce inpaint holes (band artifacts) at foreground and background edges. Tuned for Light Inpaint (stream). VDA-S and Distill-Any-S only.
 - **FPS Display** — Displays the current average conversion FPS on screen.
@@ -123,6 +124,7 @@ If you wait patiently, you will see the conversion proceed normally.
 - **VR Screen Options** — Configure screen size, height, distance, center position, background and screen reset.
 - **Keyboard Hotkeys** — Assign shortcut keys for each option.
 - **Letterbox Remove Toggle** — Automatically detects and removes letterboxing. This removes artifacts that can appear above and below the letterbox bars in letterboxed videos. Quest users can toggle this via controller input; other headsets must assign a keyboard shortcut. Make sure to turn this OFF when you're done, to prevent malfunctions.
+- **Depth Map Preview** — Displays the corrected depth map instead of the 3D output. Toggle in real time via a hotkey.
 - **Mouse Cursor** — Adjust the size and color of the mouse cursor used for controller input.
   - **Auto Hide** — When enabled, the mouse cursor is automatically hidden during video playback.
   - **Show Cursor** — Hides the in-app mouse cursor if a duplicate cursor appears in Virtual Desktop.
@@ -153,6 +155,7 @@ If you wait patiently, you will see the conversion proceed normally.
 - **Auto Letterbox Crop** — Automatically detects and crops top and bottom letterboxes.<br> Note that detection may fail if text or subtitles overlap the letterbox area.
 - **Pad to 16:9** — Pads non-16:9 videos with letterboxes to conform to a 16:9 aspect ratio.<br> Recommended for use in conjunction with Auto Letterbox Crop.
 - **Sound Booster** — When enabled, amplifies the audio volume by 400% during conversion.
+- **Schedule PC Shutdown After Conversion** — Shuts down the computer 5 minutes after all conversions are completed. Uncheck the option within those 5 minutes to cancel.
 - **Start Time, End Time** — When enabled, allows specifying a custom time frame to convert a specific clip of the video.
 - **Start / Stop Buttons** — Starts or halts the video conversion process.
 
