@@ -122,7 +122,7 @@ The cache is reused afterwards, so later runs start much faster. (A new cache is
 - **Mouse Cursor** — Adjust the size and color of the mouse cursor used for controller input.
   - **Auto Hide** — When enabled, the mouse cursor is automatically hidden during video playback.
   - **Show Cursor** — Hides the in-app mouse cursor if a duplicate cursor appears in Virtual Desktop.
-- **Color Correction** — Adjusts output colors, excluding OpenXR and Anaglyph modes. Useful for brightening the image, as 3D monitors tend to reduce screen brightness.
+- **Color Correction** — Adjusts output colors, excluding Anaglyph modes. Useful for brightening the image, as 3D monitors tend to reduce screen brightness.
 - **Reset Settings** — Restores all settings to their default values.
 - **Start 3D Conversion / Stop** — Starts or stops the program. You can also hold the `ESC` key for 2 seconds to exit the program.
 
