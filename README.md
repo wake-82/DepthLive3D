@@ -80,7 +80,6 @@ https://github.com/wake-82/DepthLive3D/releases/tag/VR
 When torch.compile or TensorRT is turned on, the conversion may not start right away after you press start.
 The program is creating an optimized cache file for your model and input size, which can take anywhere from a few seconds to several minutes. Once it is finished, the conversion starts automatically.
 This does not mean the program has crashed or stopped responding. Please wait until it completes.
-The cache is created before OpenXR mode is entered, so the headset no longer shows a black screen during this process.
 The cache is reused afterwards, so later runs start much faster. (A new cache is created when the input size changes, for example when letterbox removal is toggled.)
 
 ---
