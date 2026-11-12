@@ -105,6 +105,7 @@ If you wait patiently, you will see the conversion proceed normally.
 <br>Additionally, since this mode uses only the most recent frame, it offers the fastest screen response time. Therefore, if game responsiveness is important to you, enabling this mode can be advantageous. 
 - **torch.compile** — Enabling this option speeds up inference for the depth map and inpaint models, which improves conversion speed.To use it, you must install torch.compile support separately.
 <br>※ Note: Fast Inpaint does not use an AI model, so enabling this option will not make Fast Inpaint any faster.
+- **TensorRT** — Creates an optimized cache file to run the depth model faster. The first run takes extra time to create the cache. If torch.compile is also enabled, TensorRT takes priority. Supported on RTX 2000 series and newer. <br>※ Note: TensorRT is not applied to Inpaint models or Fast Inpaint, so enabling this option will not make them any faster.
 - **Auto Mode** — When enabled, Edge Fix and Flicker Reduction are automatically set to optimal values based on the 3D Strength value.
 - **3D Format** — Enabled in PC mode. Select the 3D output format that matches your device.
 - **3D Strength** — Adjusts the strength of the 3D effect. Higher strength increases artifacts and depth map flickering. You can adjust this in real time using the `[` and `]` keys.
@@ -174,6 +175,7 @@ If you wait patiently, you will see the conversion proceed normally.
 | Grip button | Hold the grip button and move the controller left/right to adjust screen size, or up/down to adjust screen distance. |
 | A / X button | Right mouse click |
 | B / Y button | Toggle Letterbox Remove ON/OFF |
+| Trigger + A / X button (Hold 2s) | Open Windows Touch Keyboard |
 
 ---
 
