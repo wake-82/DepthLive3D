@@ -17,7 +17,33 @@ DepthLive3D is a free program that uses AI-based depth mapping and OpenXR techno
 - VDA-S, Depth Resolution 630, 3D Strength 3.0, Convergence 0.5, Edge Fix 1, Flicker Reduction OFF, Depth AA OFF, Depth Linear Compression ON, Medium Inpaint (Conversion 3D Only)
 
 ## Updates
-- **3.2.2:** Added the Depth Linear Compression option, fixed the ghosting issue in the Light Inpaint Stream.
+**Version 3.3 Upcoming Update**</br>
+
+**■ General**
+
+* Implemented and integrated TensorRT support
+* Added Depth Anything V2 Small model
+* Added an option to adjust inpaint resolution
+* Updated preset configuration ranges
+* Changed VDA-S (Metric) absolute depth values to convert into disparity values
+
+**■ Launcher**
+
+* Added a console window ON/OFF toggle button
+* Added a button to clear TensorRT cache files
+
+**■ Conversion 3D**
+
+* Added a scheduled PC shutdown feature after conversion completes
+* Added a reset settings button
+
+**■ Live 3D**
+
+* Added presets and a depth map preview feature
+* Fixed color calibration to work properly in OpenXR mode
+* Fixed a black screen issue by pre-initializing Torch Compile and TensorRT before entering OpenXR mode
+* Added a remaining time indicator for screen rebuilding when letterbox removal is enabled alongside Torch Compile and TensorRT
+* Added a shortcut in OpenXR mode to launch the Windows touch keyboard by holding the VR controller trigger and the A (or X) button simultaneously for 2 seconds
 
 ## Requirements
 
