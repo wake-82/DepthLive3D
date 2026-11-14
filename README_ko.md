@@ -48,6 +48,7 @@ DepthLive3D는 AI 기반 뎁스맵과 OpenXR 기술을 사용하여 PC 화면을
 * 듀얼 모니터 3D 출력 모드 개선: Dynamic Resolution Auto Adjust를 켜면 두 모니터 모두 출력 해상도로 자동 전환
 * OpenXR 모드에서 색상 보정이 제대로 작동하지 않던 문제 수정
 * OpenXR 모드 진입 전에 torch.compile과 TensorRT를 미리 초기화하여 검은 화면이 나타나던 문제 수정
+* 색상 보정 옵션에 선명도 기능을 추가했습니다.
 
 ## 요구 사항
 
