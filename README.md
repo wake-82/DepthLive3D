@@ -37,8 +37,8 @@ DepthLive3D is a free program that uses AI-based depth mapping and OpenXR techno
 * Added the Schedule PC Shutdown After Conversion option.
 * Added a reset settings button
 * The estimated remaining time is displayed during conversion.
-* We fixed an issue where stopping the conversion midway saves the file up to the point where it was processed.
-* We fixed an issue where extracting the depth map after setting a time and re-converting ensures that the depth map and the specified video remain in sync.
+* Stopping a conversion midway now saves the output file up to the processed point.
+* Fixed an out-of-sync issue between the depth map and the specified video when re-converting with a set time range.
 
 **■ Live 3D**
 
