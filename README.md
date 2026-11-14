@@ -48,6 +48,7 @@ DepthLive3D is a free program that uses AI-based depth mapping and OpenXR techno
 * Improved Dual-Monitor 3D Output mode: when Dynamic Resolution Auto Adjust is enabled, both monitors now automatically switch to the output resolution
 * Fixed color calibration not working properly in OpenXR mode
 * Fixed a black screen issue in OpenXR mode by pre-initializing torch.compile and TensorRT before entering it
+* Added a Sharpness option to the Color Correction settings
 
 ## Requirements
 
