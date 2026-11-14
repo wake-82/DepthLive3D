@@ -6,3 +6,32 @@ v3.1: Added Distill-Any-Depth, Fix conversion error with the latest FFmpeg build
 v3.2: Live3D Added mouse cursor toggle, Light Inpaint Stream, dubois-anaglyph & output screen calibration to Live3D, added Light, Medium Inpaint & dubois-anaglyph to Conversion3D.
 v3.2.1: Added torch.compile support and fixed an issue where ZipDepth conversion failed on non-16:9 videos when torch.compile was enabled.
 v3.2.2: Added the Depth Linear Compression option, fixed the ghosting issue in the Light Inpaint Stream.
+
+Version 3.3 Update Notes
+
+■ General
+Implemented and integrated TensorRT support ※ Note: The VDA model achieves maximum conversion speed only when both torch.compile and TensorRT are enabled.
+Added Depth Anything V2 Small model
+Added an option to adjust inpaint resolution
+Updated preset configuration ranges
+Changed VDA-S (Metric) absolute depth values to convert into disparity values
+
+■ Launcher
+Added a console window ON/OFF toggle button
+Added a button to clear TensorRT cache files
+
+■ Conversion 3D
+Added the Schedule PC Shutdown After Conversion option.
+Added a reset settings button
+The estimated remaining time is displayed during conversion.
+Stopping a conversion midway now saves the output file up to the processed point.
+Fixed an out-of-sync issue between the depth map and the specified video when re-converting with a set time range.
+
+■ Live 3D
+Added presets and the Depth Map Preview feature
+Added a shortcut to launch the Windows touch keyboard in OpenXR mode: hold the VR controller trigger and the A (or X) button together for 2 seconds
+Added a remaining-time indicator while torch.compile or TensorRT rebuilds after letterbox removal is toggled
+Improved Dual-Monitor 3D Output mode: when Dynamic Resolution Auto Adjust is enabled, both monitors now automatically switch to the output resolution
+Fixed color calibration not working properly in OpenXR mode
+Fixed a black screen issue in OpenXR mode by pre-initializing torch.compile and TensorRT before entering it
+Added a Sharpness option to the Color Correction settings
