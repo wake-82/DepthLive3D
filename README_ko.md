@@ -14,7 +14,7 @@ DepthLive3D는 AI 기반 뎁스맵과 OpenXR 기술을 사용하여 PC 화면을
 - 2D 원본 720p, VDA-S Stream, Depth Resolution 630, 3D Strength 2.0, Convergence 0.5, Auto Mode, Fast Inpaint
 
 [Camel Demo](https://youtu.be/2lOhxtOKalw?si=cLFCvIuXstRVbHc9)
-- VDA-S, Depth Resolution 630, 3D Strength 3.0, Convergence 0.5, Edge Fix 1, Flicker Reduction OFF, Depth AA OFF, Depth Linear Compression ON, Medium Inpaint (Conversion 3D 전용)
+- VDA-S, Depth Resolution 630, 3D Strength 2.5, Convergence 0.5, Edge Fix 1, Flicker Reduction OFF, Depth AA OFF, Depth Linear Compression ON, Medium Inpaint (Conversion 3D 전용)
 
 ## 업데이트
 **버전 3.3.1 업데이트 노트**</br>
