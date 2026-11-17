@@ -90,7 +90,11 @@ The cache is reused afterwards, so later runs start much faster. (A new cache is
 <br>Additionally, since this mode uses only the most recent frame, it offers the fastest screen response time. Therefore, if game responsiveness is important to you, enabling this mode can be advantageous. 
 - **torch.compile** — Enabling this option speeds up inference for the depth map and inpaint models, which improves conversion speed.To use it, you must install torch.compile support separately.
 <br>※ Note: Fast Inpaint does not use an AI model, so enabling this option will not make Fast Inpaint any faster.
-- **TensorRT** — Creates an optimized cache file to run the depth model faster. The first run takes extra time to create the cache. If torch.compile is also enabled, TensorRT takes priority. Supported on RTX 2000 series and newer. <br>※ Note: TensorRT is not applied to Inpaint models or Fast Inpaint, so enabling this option will not make them any faster.
+- **TensorRT** — Creates optimized cache files to run the depth model and the Light Inpaint and Medium Inpaint models faster. The first run takes extra time to create the cache for each video resolution. If torch.compile is also enabled, TensorRT takes priority. Supported on RTX 2000 series and newer.
+※ Note: Fast Inpaint does not use an AI model, so enabling this option will not make Fast Inpaint any faster.
+※ Note: The VDA model achieves maximum conversion speed only when both torch.compile and TensorRT are enabled.
+- **Hybrid** — TensorRT accelerates the depth model, while torch.compile accelerates the inpaint models. When both the depth model and the inpaint models are accelerated, Hybrid mode gives the fastest conversion speed. Both torch.compile and TensorRT must be available to use this mode.
+※ Note: Fast Inpaint does not use an AI model, so Hybrid mode will not make Fast Inpaint any faster.
 - **Auto Mode** — When enabled, Edge Fix and Flicker Reduction are automatically set to optimal values based on the 3D Strength value.
 - **3D Format** — Enabled in PC mode. Select the 3D output format that matches your device.
 - **3D Strength** — Adjusts the strength of the 3D effect. Higher strength increases artifacts and depth map flickering. You can adjust this in real time using the `[` and `]` keys.
