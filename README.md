@@ -6,7 +6,7 @@
 
 ## What is DepthLive3D?
 ![preview](./preview.png)
-DepthLive3D is a free program that uses AI-based depth mapping to convert your live PC screen into 3D in real time, alongside offline 2D-to-3D video file conversion. Choose the output that suits your device: view it in a VR headset through OpenXR, or output Half SBS, Full SBS, or Top-and-Bottom 3D to a 3D TV, AR glasses, a 3D monitor, or a second display. Anaglyph output for red-cyan glasses is also supported.
+DepthLive3D is a free program that uses AI-based depth mapping to convert your live PC screen into 3D in real time, alongside offline 2D-to-3D video file conversion. Choose the output that suits your device: view it in a VR headset through OpenXR, or output Half SBS, Full SBS, or Top-and-Bottom 3D to a 3D TV, AR glasses, or a 3D monitor. Anaglyph output for red-cyan glasses is also supported.
 
 ## 3D Conversion Sample Video
 
