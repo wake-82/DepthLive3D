@@ -17,38 +17,22 @@ DepthLive3D is a free program that uses AI-based depth mapping and OpenXR techno
 - VDA-S, Depth Resolution 630, 3D Strength 3.0, Convergence 0.5, Edge Fix 1, Flicker Reduction OFF, Depth AA OFF, Depth Linear Compression ON, Medium Inpaint (Conversion 3D Only)
 
 ## Updates
-**Version 3.3 Update Notes**</br>
+**Version 3.3.1 Update Notes**</br>
 
 **■ General**
 
-* Implemented and integrated TensorRT support ※ Note: The VDA model achieves maximum conversion speed only when both torch.compile and TensorRT are enabled.
-* Added Depth Anything V2 Small model
-* Added an option to adjust inpaint resolution
-* Updated preset configuration ranges
-* Changed VDA-S (Metric) absolute depth values to convert into disparity values
+* Extended 3D Strength up to 5.0, allowing a stronger 3D effect even with Depth Linear Compression turned on
+* Improved the Depth Linear Compression option: it can now be turned on or off regardless of Auto Mode, the compression rate values were readjusted to match the higher 3D Strength, and it is now turned on by default (turn it off to return to the previous 3D effect)
+* Updated Auto Mode settings: the Edge Fix and Flicker Reduction (EMA) values were adjusted to match the higher 3D Strength
+* Added post-processing to make banding artifacts less noticeable in Light Inpaint (stream)
+* Extended TensorRT acceleration to the Light Inpaint and Medium Inpaint models, in addition to the depth models. An inpaint cache file is generated for each video resolution on the first run before conversion begins ※ Note: The VDA model achieves maximum conversion speed only when both Torch.compile and TensorRT are enabled.
+* Added Hybrid acceleration mode: TensorRT accelerates the depth model and Torch.compile accelerates the inpaint models, giving the fastest conversion when both are accelerated
+* The app now remembers the last Depth Resolution and Inpaint Resolution set for each depth model and inpaint model
 
-**■ Launcher**
+**■ Live3D**
 
-* Added a console window ON/OFF toggle button
-* Added a button to clear TensorRT cache files
-
-**■ Conversion 3D**
-
-* Added the Schedule PC Shutdown After Conversion option.
-* Added a reset settings button
-* The estimated remaining time is displayed during conversion.
-* Stopping a conversion midway now saves the output file up to the processed point.
-* Fixed an out-of-sync issue between the depth map and the specified video when re-converting with a set time range.
-
-**■ Live 3D**
-
-* Added presets and the Depth Map Preview feature
-* Added a shortcut to launch the Windows touch keyboard in OpenXR mode: hold the VR controller trigger and the A (or X) button together for 2 seconds
-* Added a remaining-time indicator while torch.compile or TensorRT rebuilds after letterbox removal is toggled
-* Improved Dual-Monitor 3D Output mode: when Dynamic Resolution Auto Adjust is enabled, both monitors now automatically switch to the output resolution
-* Fixed color calibration not working properly in OpenXR mode
-* Fixed a black screen issue in OpenXR mode by pre-initializing torch.compile and TensorRT before entering it
-* Added a Sharpness option to the Color Correction settings
+* Fixed an issue where the UI broke after Dynamic Resolution Auto Adjust changed the resolution
+* Added Depth Linear Compression to the hotkey options
 
 ## Requirements
 
