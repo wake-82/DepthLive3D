@@ -188,9 +188,6 @@ A: Go to 'Mouse pointer style and color' in Windows Settings and reset it to the
 **Q: The mouse cursor isn't moving.**<br>
 A: If you are running a program that requires administrator privileges, the controller's mouse cursor will not work.<br> Please use your computer mouse to close the program.
 
-**Q: Target FPS is capped at 30.**<br> 
-A: In PC mode, SBS and TB settings only support up to 30 FPS due to limitations in the capture method.
-
 **Q: An error occurs as soon as conversion starts when the NVENC codec is selected.**<br>
 A: Driver compatibility for FFmpeg's NVENC codec varies depending on the build version. Please update to the latest NVIDIA graphics driver.
 
