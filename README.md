@@ -246,6 +246,10 @@ Built with the help of:
 - [NVIDIA TensorRT](https://developer.nvidia.com/tensorrt) — Proprietary License (NVIDIA Software License Agreement)<br>
   Optional acceleration component. Installing `tensorrt_cu12` via the installer accepts the NVIDIA TensorRT license.<br>
   License: https://docs.nvidia.com/deeplearning/tensorrt/latest/reference/sla.html
+- [PyAV](https://github.com/PyAV-Org/PyAV) — BSD-3-Clause License<br>
+  Python bindings for FFmpeg. The Windows wheels bundle their own FFmpeg libraries.
+- [python-sounddevice](https://github.com/spatialaudio/python-sounddevice) — MIT License<br>
+  Python bindings for PortAudio (MIT-style license). The Windows wheels bundle PortAudio.
 
 Full license texts for each third-party library are included in the THIRD_PARTY_LICENSES/ folder.
 
