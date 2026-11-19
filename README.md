@@ -277,3 +277,4 @@ License: https://creativecommons.org/licenses/by/3.0/
 Demo video has been converted from 2D to 3D using DepthLive3D.
 
 ## Next update
+A 'Live Player' mode that allows you to convert and watch videos in real-time 3D will be added. Also, a 'Light Inpaint' feature that works only in this mode will be introduced as well.
