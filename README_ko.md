@@ -247,6 +247,10 @@ A. 멈춘 것이 아닙니다. 레터박스를 제거하면 프레임이 잘리�
 - [NVIDIA TensorRT](https://developer.nvidia.com/tensorrt) — 독점 라이선스 (NVIDIA Software License Agreement)<br>
   선택적 가속 구성 요소입니다. 설치 프로그램으로 `tensorrt_cu12`를 설치하면 NVIDIA TensorRT 라이선스에 동의한 것으로 간주됩니다.<br>
   라이선스: https://docs.nvidia.com/deeplearning/tensorrt/latest/reference/sla.html
+- [PyAV](https://github.com/PyAV-Org/PyAV) — BSD-3-Clause 라이선스<br>
+  FFmpeg의 Python 바인딩입니다. Windows 휠에는 자체 FFmpeg 라이브러리가 포함되어 있습니다.
+- [python-sounddevice](https://github.com/spatialaudio/python-sounddevice) — MIT 라이선스<br>
+  PortAudio(MIT 계열 라이선스)의 Python 바인딩입니다. Windows 휠에는 PortAudio가 포함되어 있습니다.
 
 각 서드파티 라이브러리의 전체 라이선스 문서는 THIRD_PARTY_LICENSES/ 폴더에 포함되어 있습니다.
 
