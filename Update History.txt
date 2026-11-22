@@ -52,3 +52,16 @@ The app now remembers the last Depth Resolution and Inpaint Resolution set for e
 
 Fixed an issue where the UI broke after Dynamic Resolution Auto Adjust changed the resolution
 Added Depth Linear Compression to the hotkey options
+
+=====================================================
+
+Version 3.4 Update Notes
+
+■ General
+
+Improved Auto mode so that the Edge Fix value is now automatically calculated to match the actual inpainting area required.
+Improved flicker reduction performance.
+■ Live3D
+
+Added Live Player mode, which lets you watch video files converted to 3D in real time. Switch the mode to Live Player, select a video file, and start the conversion. To watch on a VR headset, select OpenXR as the 3D format.
+Added Light Inpaint (video model). This inpainting model references both past and future frames, so it cannot be used when capturing the PC screen and is available only in Live Player.
