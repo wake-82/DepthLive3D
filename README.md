@@ -27,7 +27,7 @@ DepthLive3D is a free program that uses AI-based depth mapping to convert your l
 * Added **Live Player mode**, which lets you watch video files converted to 3D in real time.
   Switch the mode to Live Player, select a video file, and start the conversion.
   To watch on a VR headset, select OpenXR as the 3D format.
-* Added **Light Inpaint for video**.
+* Added **Light Inpaint (video model)**.
   This inpainting model references both past and future frames, so it cannot be used when capturing the PC screen and is available only in Live Player.
 
 ## Requirements
