@@ -82,7 +82,10 @@ The cache is reused afterwards, so later runs start much faster. (A new cache is
 
 ## Live 3D Options
 ![preview](./live3d_preview.png)
-- **Mode** — Selects between OpenXR, PC, and Dual-Monitor 3D Output modes.<br> Choose OpenXR for VR devices, and PC or Dual-Monitor 3D Output for 3D TV, AR glasses, or standard monitors.<br> Note that Dual-Monitor 3D Output mode requires an external monitor or a virtual monitor.
+- **Mode** — Selects between OpenXR, PC, Dual-Monitor 3D Output, and Live Player modes.
+Choose OpenXR for VR devices, and PC or Dual-Monitor 3D Output for 3D TV, AR glasses, or standard monitors.
+Choose Live Player to watch video files converted to 3D in real time. To watch on a VR device, set the 3D format to OpenXR.
+Note that Dual-Monitor 3D Output mode requires an external monitor or a virtual monitor.
 - **Process Size** — Sets the capture resolution. 720p or 1080p is recommended.
 - **Target FPS** — Sets the capture frame rate. You can choose between 30 and 60. If the frame rate is unstable, try switching to 30.
 - **Input Monitor** — Selects which monitor to capture. Set to `0` for the main monitor.
