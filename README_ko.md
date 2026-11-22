@@ -46,25 +46,31 @@ DepthLive3D는 AI 기반 뎁스맵 기술로 PC 화면을 실시간으로 3D로 
 ---
 ## DepthLive3D Windows 10 & 11 빠른 설치 가이드
 
-1. 먼저 Microsoft Visual C++ Redistributable x64 패키지(vc_redist.x64.exe)를 설치합니다:
-https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
-
-2. Releases 페이지에서 DepthLive3D 설치 파일을 다운로드하여 C:\DepthLive3D에 압축을 풉니다.
+1. Releases 페이지에서 DepthLive3D 설치 파일을 다운로드하여 C:\DepthLive3D에 압축을 해제하세요.
 https://github.com/wake-82/DepthLive3D/releases/tag/VR
 
-3. `enable_long_path.reg` 레지스트리 파일을 적용한 뒤 컴퓨터를 재시작합니다.
-   torch.compile과 TensorRT를 활성화하고 안정적으로 사용하려면 Windows의 긴 경로 지원이 필요합니다.
-https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry
+2. 먼저 Microsoft Visual C++ Redistributable x64 패키지(vc_redist.x64.exe)를 설치하세요:
+https://learn.microsoft.com/ko-kr/cpp/windows/latest-supported-vc-redist?view=msvc-170
 
-5. `DepthLive3D-Install.bat`을 실행합니다.
+3. `enable_long_path.reg` 레지스트리 파일을 적용한 뒤 컴퓨터를 재시작하세요.
+   Windows의 긴 경로(Long Path) 지원은 torch.compile과 TensorRT를 안정적으로 사용하기 위해 필요합니다.
+   (이 두 기능 없이 Lite 설치만 사용할 계획이라면 이 단계는 건너뛰어도 됩니다.
+   나중에 두 기능을 설치하기로 했을 때 적용하셔도 됩니다.)
+https://learn.microsoft.com/ko-kr/windows/win32/fileio/maximum-file-path-limitation?tabs=registry
 
-6. 설치가 완료되면 `Run.bat` 파일을 실행합니다.
+4. 두 설치 파일 중 하나를 선택해 실행하세요.
+   - `DepthLive3D-Install-Full.bat` : torch.compile과 TensorRT를 포함한 모든 구성 요소를 설치합니다.
+   - `DepthLive3D-Install-Lite.bat` : torch.compile과 TensorRT를 제외한 모든 구성 요소를 설치합니다.
+     (두 가속 기능이 필요 없거나, 더 짧고 간단하게 설치하고 싶다면 이쪽을 권장합니다.)
 
-7. 영상 파일을 변환하려면 Converted 3D를, 컴퓨터 화면을 실시간으로 3D로 변환하려면 Live 3D를 선택합니다.
+5. 설치가 완료되면 `Run.bat` 파일을 실행하세요.
+
+6. 영상 파일을 변환하려면 Converted 3D를, 컴퓨터 화면을 실시간으로 3D 변환하려면 Live 3D를 선택하세요.
 
 ※ 참고
-1. 텐서RT 또는 torch.compile이 설치에 실패했거나 비활성화된 경우
-install_tensorrt.bat 또는 install_torch_compile.bat을 실행하여 재설치를 시도해 보세요.
+1. Lite 버전을 설치했거나, Full 버전에서 텐서RT 또는 torch.compile 설치에 실패한 경우
+install_tensorrt.bat 또는 install_torch_compile.bat을 (설치 파일과 같은 폴더에서) 실행하면 언제든지 설치하거나 재설치할 수 있습니다.
+DepthLive3D를 다시 설치할 필요는 없습니다.
 (단, 텐서RT는 GTX 10 시리즈 그래픽카드에서 지원되지 않으므로, 해당 제품군에서 활성화되지 않는 것은 정상적인 동작입니다.)
 
 2. torch.compile 또는 TensorRT를 켜면 시작을 눌러도 변환이 바로 시작되지 않을 수 있습니다.
