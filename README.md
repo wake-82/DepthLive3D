@@ -46,24 +46,31 @@ DepthLive3D is a free program that uses AI-based depth mapping to convert your l
 ---
 ## DepthLive3D Windows 10 & 11 Quick Installation Guide
 
-1. Install the Microsoft Visual C++ Redistributable x64 package first (vc_redist.x64.exe):
-https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
-
-2. Download the DepthLive3D installation files from the Releases page and extract them to C:\DepthLive3D.
+1. Download the DepthLive3D installation files from the Releases page and extract them to C:\DepthLive3D.
 https://github.com/wake-82/DepthLive3D/releases/tag/VR
 
+2. Install the Microsoft Visual C++ Redistributable x64 package first (vc_redist.x64.exe):
+https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
+
 3. Apply the `enable_long_path.reg` registry file, then restart your computer.
-   Long path support in Windows is required to enable torch.compile and TensorRT and to use them reliably.
+   Long path support in Windows is required to use torch.compile and TensorRT reliably.
+   (If you only plan to use the Lite installer without those two features, you can skip this step.
+   You can apply it later when you decide to install them.)
 https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry
 
-5. Run `DepthLive3D-Install.bat`.
+4. Choose one of the two installers and run it:
+   - `DepthLive3D-Install-Full.bat` : installs everything, including torch.compile and TensorRT.
+   - `DepthLive3D-Install-Lite.bat` : installs everything EXCEPT torch.compile and TensorRT.
+     (Recommended if you do not need those accelerators, or if you want a shorter and simpler installation.)
 
-6. Once the installation is complete, run the `Run.bat` file.
+5. Once the installation is complete, run the `Run.bat` file.
 
-7. Select Converted 3D to convert video files, or Live 3D to convert your computer screen to 3D in real time.
+6. Select Converted 3D to convert video files, or Live 3D to convert your computer screen to 3D in real time.
 
 ※ Note
-1. If TensorRT or torch.compile fails to install or is disabled, try running install_tensorrt.bat or install_torch_compile.bat to reinstall them.
+1. If you installed the Lite version, or if TensorRT or torch.compile failed to install in the Full version,
+you can install or reinstall them at any time by running install_tensorrt.bat or install_torch_compile.bat
+(in the same folder as the installer). No reinstallation of DepthLive3D is needed.
 (Note: TensorRT is not supported on GTX 10-series graphics cards, so it is normal for it to remain disabled on those GPUs.)
 
 2. When torch.compile or TensorRT is turned on, the conversion may not start right away after you press start.
