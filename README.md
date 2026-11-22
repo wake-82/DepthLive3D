@@ -17,22 +17,18 @@ DepthLive3D is a free program that uses AI-based depth mapping to convert your l
 - VDA-S, Depth Resolution 630, 3D Strength 2.5, Convergence 0.5, Edge Fix 1, Flicker Reduction OFF, Depth AA OFF, Depth Linear Compression ON, Medium Inpaint (Conversion 3D Only)
 
 ## Updates
-**Version 3.3.1 Update Notes**</br>
+**Version 3.4 Update Notes**<br>
 
 **■ General**
-
-* Extended 3D Strength up to 5.0, allowing a stronger 3D effect even with Depth Linear Compression turned on
-* Improved the Depth Linear Compression option: it can now be turned on or off regardless of Auto Mode, the compression rate values were readjusted to match the higher 3D Strength, and it is now turned on by default (turn it off to return to the previous 3D effect)
-* Updated Auto Mode settings: the Edge Fix and Flicker Reduction (EMA) values were adjusted to match the higher 3D Strength
-* Added post-processing to make banding artifacts less noticeable in Light Inpaint (stream)
-* Extended TensorRT acceleration to the Light Inpaint and Medium Inpaint models, in addition to the depth models. An inpaint cache file is generated for each video resolution on the first run before conversion begins ※ Note: The VDA model achieves maximum conversion speed only when both Torch.compile and TensorRT are enabled.
-* Added Hybrid acceleration mode: TensorRT accelerates the depth model and Torch.compile accelerates the inpaint models, giving the fastest conversion when both are accelerated
-* The app now remembers the last Depth Resolution and Inpaint Resolution set for each depth model and inpaint model
+* Improved Auto mode so that the Edge Fix value is now automatically calculated to match the actual inpainting area required.
+* Improved flicker reduction performance.
 
 **■ Live3D**
-
-* Fixed an issue where the UI broke after Dynamic Resolution Auto Adjust changed the resolution
-* Added Depth Linear Compression to the hotkey options
+* Added **Live Player mode**, which lets you watch video files converted to 3D in real time.
+  Switch the mode to Live Player, select a video file, and start the conversion.
+  To watch on a VR headset, select OpenXR as the 3D format.
+* Added **Light Inpaint for video**.
+  This inpainting model references both past and future frames, so it cannot be used when capturing the PC screen and is available only in Live Player.
 
 ## Requirements
 
