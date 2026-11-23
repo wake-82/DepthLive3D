@@ -156,6 +156,36 @@ Note that Dual-Monitor 3D Output mode requires an external monitor or a virtual 
 
 ---
 
+## Live Player Options
+![preview](./player_preview.png)
+Live Player is a mode that plays a video file while converting it to 3D in real time.
+
+- **Select File** — Select the video file to play.
+- **Select Subtitle** — When you select a video, a subtitle file in the same folder is selected automatically.
+- **3D Format** — Choose from hsbs, fsbs, tb, anaglyph, or openxr.
+- **Method** — In addition to the standard methods, you can choose Light Inpaint (video model), which is available only in Live Player.
+
+### Subtitle Settings
+- **Subtitle Font** — Choose from the fonts installed on your system.
+- **Subtitle Size** — Adjusts the size of the subtitles.
+- **Subtitle Pop-out** — The higher the value, the further the subtitles float in front of the screen.
+- **Font Background (Black)** — Sets the opacity of the black background behind the subtitles. `0` is no background, and `1` is solid black.
+
+### Keyboard Hotkeys
+
+| Key | Action |
+|---|---|
+| **Space** | Play / Pause |
+| **← / →** | Seek back / forward 5 seconds |
+| **↑ / ↓** | Volume up / down |
+
+### On-screen Control Bar
+- **3D Panel** — 3D adjustment options (3D Strength, Convergence, Edge Fix, Flicker Reduction, etc.).
+- **☰ Menu Panel** — Options for showing FPS and subtitles, and for adjusting subtitle sync and audio sync.
+- **X** — Stops the 3D conversion and closes the player window.
+
+---
+
 ## Audio Sync
 
 - Used to fix audio sync issues after 3D video conversion. Adjust the delay value to advance or delay the audio for proper sync.
