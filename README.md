@@ -310,4 +310,4 @@ License: https://creativecommons.org/licenses/by/3.0/
 Demo video has been converted from 2D to 3D using DepthLive3D.
 
 ## Next update
-
+Image conversion, auto-convergence, and the Depth Anything 3 Mono Large model will be added.
