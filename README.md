@@ -254,6 +254,7 @@ This project uses source code from [ZipDepth](https://github.com/fabiotosi92/Zip
 This project uses source code from [Distill-Any-Depth](https://github.com/Westlake-AGI-Lab/Distill-Any-Depth) (MIT License).<br>
 This project uses source code from [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2) (Apache 2.0 License, Copyright 2024 Depth Anything Authors).<br>
 This project uses source code from [Video-Depth-Anything](https://github.com/DepthAnything/Video-Depth-Anything) (Apache 2.0 License, Copyright 2025 ByteDance).<br>
+This project uses source code from [Depth-Anything-3](https://github.com/ByteDance-Seed/Depth-Anything-3/tree/main) (Apache 2.0 License, Copyright 2025 The Depth Anything 3 Team).<br>
 This project uses source code from [iw3-inpaint](https://github.com/Rowan3D/iw3-inpaint) (MIT License).<br>
 This project uses source code from [iw3-lowres](https://github.com/Rowan3D/iw3-lowres) (MIT License).<br>
 
