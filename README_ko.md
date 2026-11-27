@@ -254,6 +254,7 @@ A. 멈춘 것이 아닙니다. 레터박스를 제거하면 프레임이 잘리�
 이 프로젝트는 [Distill-Any-Depth](https://github.com/Westlake-AGI-Lab/Distill-Any-Depth)의 소스 코드를 사용합니다 (MIT License).<br>
 이 프로젝트는 [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2)의 소스 코드를 사용합니다 (Apache 2.0 License, Copyright 2024 Depth Anything Authors).<br>
 이 프로젝트는 [Video-Depth-Anything](https://github.com/DepthAnything/Video-Depth-Anything)의 소스 코드를 사용합니다 (Apache 2.0 License, Copyright 2025 ByteDance).<br>
+이 프로젝트는 [Depth-Anything-3](https://github.com/ByteDance-Seed/Depth-Anything-3/tree/main)의 소스 코드를 사용합니다  (Apache 2.0 License, Copyright 2025 The Depth Anything 3 Team).<br>
 이 프로젝트는 [iw3-inpaint](https://github.com/Rowan3D/iw3-inpaint)의 소스 코드를 사용합니다 (MIT License).<br>
 이 프로젝트는 [iw3-lowres](https://github.com/Rowan3D/iw3-lowres)의 소스 코드를 사용합니다 (MIT License).<br>
 
