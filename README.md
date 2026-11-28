@@ -17,18 +17,15 @@ DepthLive3D is a free program that uses AI-based depth mapping to convert your l
 - VDA-S, Depth Resolution 630, 3D Strength 3.0, Convergence 0.5, Edge Fix 1, Flicker Reduction OFF, Depth AA OFF, Depth Linear Compression ON, Medium Inpaint (Conversion 3D Only)
 
 ## Updates
-**Version 3.4 Update Notes**<br>
+**Version 3.5 Update Notes**<br>
 
 **■ General**
-* Improved Auto mode so that the Edge Fix value is now automatically calculated to match the actual inpainting area required.
-* Improved flicker reduction performance.
+* Added the **Depth Anything 3 Mono Large** model.
+* Added an **Auto Convergence** feature.
+  Raising the Convergence value above 1.0 switches it to Auto Convergence.
 
-**■ Live3D**
-* Added **Live Player mode**, which lets you watch video files converted to 3D in real time.
-  Switch the mode to Live Player, select a video file, and start the conversion.
-  To watch on a VR headset, select OpenXR as the 3D format.
-* Added **Light Inpaint (video model)**.
-  This inpainting model references both past and future frames, so it cannot be used when capturing the PC screen and is available only in Live Player.
+**■ Conversion3D**
+* Added an **image conversion** feature.
 
 ## Requirements
 
