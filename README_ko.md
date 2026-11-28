@@ -11,10 +11,10 @@ DepthLive3D는 AI 기반 뎁스맵 기술로 PC 화면을 실시간으로 3D로 
 ## 3D 변환 샘플 영상
 
 [Big Buck Bunny](https://youtu.be/GoZfcv_eMXA)
-- 2D 원본 720p, VDA-S Stream, Depth Resolution 630, 3D Strength 2.0, Convergence 0.5, Auto Mode, Fast Inpaint
+- 2D 원본 720p, VDA-S Stream, Depth Resolution 630, 3D Strength 2.0, Convergence 0.5, Auto Mode, Fast Inpaint, Depth Linear Compression OFF
 
 [Camel Demo](https://youtu.be/2lOhxtOKalw?si=cLFCvIuXstRVbHc9)
-- VDA-S, Depth Resolution 630, 3D Strength 2.5, Convergence 0.5, Edge Fix 1, Flicker Reduction OFF, Depth AA OFF, Depth Linear Compression ON, Medium Inpaint (Conversion 3D 전용)
+- VDA-S, Depth Resolution 630, 3D Strength 3.0, Convergence 0.5, Edge Fix 1, Flicker Reduction OFF, Depth AA OFF, Depth Linear Compression ON, Medium Inpaint (Conversion 3D 전용)
 
 ## 업데이트
 **Version 3.4 업데이트 내역**<br>
@@ -113,7 +113,7 @@ VR 기기에서는 OpenXR을, 3D TV, AR 글래스 또는 일반 모니터에서�
 - **Method** — Normal과 Inpaint 중에서 선택합니다. Normal 방식은 표준적인 빠른 변환을 제공하고, Fast Inpaint, Light Inpaint Stream은 더 느리지만 더 높은 3D 영상 품질을 제공합니다. (비디오 모델 기반의 Light / Medium Inpaint는 Conversion 3D에서만 사용할 수 있습니다.)
 - **Inpaint Resolution** — Light Inpaint 및 Medium Inpaint 모델이 실행되는 해상도를 설정합니다. 값이 낮을수록 빠르고, 높을수록 디테일이 더 많이 보존됩니다. Fast Inpaint에는 적용되지 않습니다.
 - **Depth AA** — 뎁스맵에 안티앨리어싱을 적용하여 가장자리를 부드럽게 합니다. VDA 모델 사용 시 권장합니다.
-- **Depth Linear Compression** — 뎁스 범위를 압축하여 전경/배경 경계에서 생기는 인페인트 홀(띠 형태 아티팩트)을 줄입니다. Light Inpaint (stream)에 맞춰 튜닝되어 있습니다. VDA-S(및 metric), Depth Anything V2, Distill-Any-S에서만 사용할 수 있습니다.
+- **Depth Linear Compression** — 뎁스 범위를 압축하여 전경/배경 경계에서 생기는 인페인트 홀(띠 형태 아티팩트)을 줄입니다. 
 - **FPS Display** — 현재 평균 변환 FPS를 화면에 표시합니다.
 - **Full SBS Screen Size** — AR 글래스 사용자를 위한 옵션입니다. Full SBS(fsbs)로 출력할 때 화면 크기를 조절합니다.
 - **VR Screen Options** — 화면 크기, 높이, 거리, 중앙 위치, 배경, 화면 리셋을 설정합니다.
